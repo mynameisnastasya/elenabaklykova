@@ -336,6 +336,157 @@
       .reveal{opacity:1;transform:none;transition:none}
     }
 
+  
+    /* 2026 trend pass: proprietary editorial system + TL;DR + personalized intake */
+    :root{
+      --clay:#c98d72;
+      --rose:#c79a91;
+      --sage:#8f9a83;
+      --sand:#d9c3aa;
+      --wine:#70453f;
+    }
+
+    .marker{position:relative;display:inline-block;z-index:0}
+    .marker:after{
+      content:"";position:absolute;left:-.02em;right:-.04em;bottom:.03em;height:.22em;
+      background:linear-gradient(90deg,rgba(201,141,114,.48),rgba(199,154,145,.28));
+      border-radius:999px;z-index:-1;transform:scaleX(0);transform-origin:left center;
+      animation:markerDraw .8s .82s cubic-bezier(.2,.75,.2,1) forwards
+    }
+    @keyframes markerDraw{to{transform:scaleX(1)}}
+
+    .case-chip{
+      position:absolute;z-index:4;left:28px;top:92px;
+      display:flex;align-items:center;gap:10px;padding:10px 13px;
+      background:rgba(246,240,231,.76);backdrop-filter:blur(14px);
+      border:1px solid rgba(255,255,255,.5);border-radius:999px;
+      color:var(--brown);font-size:10px;text-transform:uppercase;letter-spacing:.13em;
+      box-shadow:0 10px 30px rgba(58,43,34,.12)
+    }
+    .case-chip i{width:7px;height:7px;border-radius:50%;background:var(--clay);box-shadow:0 0 0 4px rgba(201,141,114,.16)}
+    .case-chip span{font-style:normal}
+
+    .fit-panel{
+      grid-template-columns:.62fr 1.38fr;
+      background:transparent;border:0;padding:0;box-shadow:none
+    }
+    .fit-intro{
+      background:var(--brown);color:#fff;border-radius:18px;padding:30px;min-height:100%;
+      display:flex;flex-direction:column;justify-content:flex-end
+    }
+    .fit-intro .kicker{color:#d9bdab}
+    .fit-intro h2{color:#fff;font-size:clamp(34px,4vw,52px)}
+    .fit-intro p{color:#d9cec6}
+    .fit-list{gap:12px}
+    .fit-item{
+      border:0!important;border-radius:16px;padding:22px!important;
+      grid-template-columns:34px 1fr;align-content:start;min-height:154px;
+      transition:transform .25s ease,box-shadow .25s ease
+    }
+    .fit-item:nth-child(1){background:#eee0d4}
+    .fit-item:nth-child(2){background:#e2e5da}
+    .fit-item:nth-child(3){background:#eadeda}
+    .fit-item:nth-child(4){background:#eee6da}
+    .fit-item:hover{transform:translateY(-4px);box-shadow:0 20px 45px rgba(58,43,34,.09)}
+    .fit-item i{background:rgba(255,255,255,.45);border-color:rgba(58,43,34,.16);color:var(--brown)}
+    .fit-item strong{font-size:21px}
+    .fit-item span{line-height:1.45}
+    .tldr-badge{
+      display:inline-flex;align-items:center;gap:8px;width:max-content;
+      padding:8px 11px;border:1px solid rgba(255,255,255,.2);border-radius:999px;
+      font-size:9px;text-transform:uppercase;letter-spacing:.18em;color:#ead9cd;margin-bottom:auto
+    }
+    .tldr-badge:before{content:"↘";font-size:12px}
+
+    .method-card:nth-child(1) .num{color:var(--clay)}
+    .method-card:nth-child(2) .num{color:#b9c1aa}
+    .method-card:nth-child(3) .num{color:#d0a7a0}
+    .method-card:nth-child(4) .num{color:#d5bd9f}
+
+    .selfcheck{padding:100px 0;background:linear-gradient(180deg,var(--paper) 0%,#efe4d8 100%)}
+    .check-shell{
+      display:grid;grid-template-columns:.72fr 1.28fr;gap:0;
+      background:var(--brown);border-radius:20px;overflow:hidden;box-shadow:0 28px 80px rgba(58,43,34,.14)
+    }
+    .check-aside{
+      padding:34px;color:#fff;display:flex;flex-direction:column;justify-content:space-between;
+      min-height:510px;background:
+        radial-gradient(circle at 22% 15%,rgba(201,141,114,.26),transparent 30%),
+        radial-gradient(circle at 90% 88%,rgba(143,154,131,.16),transparent 35%),
+        var(--brown)
+    }
+    .check-aside .kicker{color:#d8bba8}
+    .check-aside h3{font-family:var(--serif);font-weight:400;font-size:clamp(35px,4vw,53px);line-height:1.02;margin:14px 0 17px}
+    .check-aside p{color:#d8cbc3;font-size:14px;max-width:390px}
+    .check-privacy{font-size:11px;color:#bbaea6;padding-top:20px;border-top:1px solid var(--darkline)}
+    .check-main{background:var(--card);padding:34px;min-height:510px;display:flex;flex-direction:column}
+    .check-meta{display:flex;justify-content:space-between;gap:18px;align-items:center;margin-bottom:34px}
+    .check-step{font-size:11px;text-transform:uppercase;letter-spacing:.16em;color:#837970}
+    .check-track{flex:1;height:3px;background:#e5d9cd;border-radius:99px;overflow:hidden}
+    .check-track span{display:block;width:33.333%;height:100%;background:linear-gradient(90deg,var(--clay),var(--sage));transition:width .35s ease}
+    .check-question{display:none;animation:questionIn .36s ease}
+    .check-question.active{display:block}
+    @keyframes questionIn{from{opacity:0;transform:translateY(7px)}to{opacity:1;transform:none}}
+    .check-question h3,.check-result h3{font-family:var(--serif);font-size:clamp(29px,3vw,41px);line-height:1.08;font-weight:400;color:var(--brown);margin-bottom:10px}
+    .check-question>p{color:#766e68;font-size:14px;margin-bottom:25px}
+    .check-options{display:grid;gap:10px}
+    .check-option{
+      appearance:none;width:100%;text-align:left;border:1px solid var(--line);background:#fffaf4;
+      border-radius:12px;padding:16px 18px;color:var(--brown);cursor:pointer;
+      display:flex;justify-content:space-between;gap:16px;align-items:center;
+      font:600 14px var(--sans);transition:.2s ease
+    }
+    .check-option:after{content:"→";font-family:var(--serif);font-size:20px;color:var(--accent)}
+    .check-option:hover,.check-option.selected{background:#eee2d7;border-color:rgba(112,69,63,.35);transform:translateX(3px)}
+    .check-hint{margin-top:auto;padding-top:24px;font-size:11px;color:#898078}
+    .check-result{display:none;animation:questionIn .4s ease}
+    .check-result.active{display:flex;flex-direction:column;height:100%}
+    .result-badge{display:inline-flex;width:max-content;padding:7px 10px;border-radius:999px;background:#e1e5da;color:#54604d;font-size:9px;text-transform:uppercase;letter-spacing:.16em;margin-bottom:20px}
+    .prep-list{list-style:none;padding:0;margin:16px 0 22px;display:grid;gap:0}
+    .prep-list li{padding:10px 0;border-top:1px solid var(--line);font-size:13px;color:#625c57}
+    .prep-list li:before{content:"✓";color:var(--sage);font-weight:900;margin-right:10px}
+    .result-actions{display:flex;flex-wrap:wrap;gap:9px;margin-top:auto}
+    .result-note{font-size:11px;color:#837a73;margin:0 0 20px}
+    .text-btn{border:0;background:transparent;color:#766b64;text-decoration:underline;text-underline-offset:4px;cursor:pointer;padding:10px 2px;font:600 12px var(--sans)}
+
+    .section-orbit{
+      display:inline-flex;align-items:center;gap:9px;margin-top:18px;color:#82776f;font-size:10px;text-transform:uppercase;letter-spacing:.16em
+    }
+    .section-orbit:before{content:"";width:34px;height:1px;background:currentColor}
+
+    @supports (animation-timeline:view()){
+      .section-head h2{
+        animation:headlineFade linear both;
+        animation-timeline:view();
+        animation-range:entry 10% cover 32%
+      }
+      @keyframes headlineFade{
+        from{opacity:.35;transform:translateY(10px)}
+        to{opacity:1;transform:none}
+      }
+    }
+
+    @media(max-width:900px){
+      .check-shell{grid-template-columns:1fr}
+      .check-aside{min-height:auto;gap:42px}
+      .check-main{min-height:500px}
+      .fit-panel{grid-template-columns:1fr}
+    }
+    @media(max-width:650px){
+      .case-chip{left:20px;top:76px}
+      .fit-intro{padding:24px}
+      .fit-item{min-height:auto}
+      .selfcheck{padding:72px 0}
+      .check-aside,.check-main{padding:25px}
+      .check-main{min-height:520px}
+      .result-actions{display:grid}
+      .result-actions .btn,.result-actions .text-btn{width:100%}
+    }
+    @media(prefers-reduced-motion:reduce){
+      .marker:after{animation:none;transform:scaleX(1)}
+      .check-question,.check-result{animation:none}
+    }
+
   </style>
 </head>
 <body>
@@ -348,6 +499,7 @@
         <span class="brandname"><strong>Елена Баклыкова</strong><span>Юрист по банкротству физических лиц</span></span>
       </a>
       <div class="navlinks">
+        <a href="#tldr">За 30 секунд</a>
         <a href="#method">Метод</a>
         <a href="#diagnostic">Диагностика</a>
         <a href="#about">О юристе</a>
@@ -363,12 +515,12 @@
       <div class="wrap hero-grid">
         <div>
           <div class="eyebrow">Банкротство физических лиц · 127-ФЗ</div>
-          <h1>Сначала — <em>проверка рисков.</em><br>Потом — банкротство.</h1>
+          <h1>Сначала — <em class="marker">проверка рисков.</em><br>Потом — банкротство.</h1>
           <p class="hero-position">Елена Баклыкова — юрист для тех, кому нужно не «списать долги любой ценой», а понять безопасный правовой маршрут до подачи заявления.</p>
           <p class="lead">Проверяем состав долгов, имущество, сделки и финансовую ситуацию. В результате вы понимаете: подходит ли процедура, где находятся риски, сколько будет стоить путь и какой следующий шаг разумен именно в вашей ситуации.</p>
           <div class="hero-actions">
             <a class="btn dark" href="https://wa.me/79043770075?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5%2C%20%D1%85%D0%BE%D1%87%D1%83%20%D0%BF%D0%BE%D0%BB%D1%83%D1%87%D0%B8%D1%82%D1%8C%20%D0%BF%D0%B5%D1%80%D0%B2%D0%B8%D1%87%D0%BD%D1%8B%D0%B9%20%D1%80%D0%B0%D0%B7%D0%B1%D0%BE%D1%80." target="_blank" rel="noopener">Написать в WhatsApp</a>
-            <a class="btn" href="#method">Как я проверяю риски</a>
+            <a class="btn" href="#check">Проверить ситуацию за 60 сек</a>
           </div>
           <div class="microproof">
             <div><strong>0 ₽</strong><span>первичный разбор</span></div>
@@ -377,7 +529,8 @@
           </div>
         </div>
         <aside class="hero-card">
-          <img class="hero-photo" src="assets/elena-main.webp" alt="Елена Баклыкова, юрист по банкротству физических лиц">
+          <img class="hero-photo" src="assets/elena-main.webp" alt="Елена Баклыкова, юрист по банкротству физических лиц" fetchpriority="high" decoding="async">
+          <div class="case-chip" aria-hidden="true"><i></i><span>Риски → решение → действия</span></div>
           <div class="hero-top">
             <span class="hero-label">Частная юридическая практика</span>
             <span class="seal">ЕБ</span>
@@ -398,11 +551,11 @@
       </div>
     </div>
 
-    <section class="quick-fit" aria-labelledby="fit-title">
+    <section class="quick-fit" id="tldr" aria-labelledby="fit-title">
       <div class="wrap">
         <div class="fit-panel reveal">
           <div class="fit-intro">
-            <div class="kicker">Быстрый самоотбор</div>
+            <div class="tldr-badge">TL;DR · за 30 секунд</div><div class="kicker">Быстрый самоотбор</div>
             <h2 id="fit-title">Мой подход вам подходит, если нужна <em>не продажа процедуры</em></h2>
             <p>А спокойный разбор, после которого понятно, что делать дальше — даже если ответ окажется «не банкротиться сейчас».</p>
           </div>
@@ -507,7 +660,7 @@
     <section class="about" id="about">
       <div class="wrap about-grid">
         <div class="about-photo-wrap reveal">
-          <img class="about-photo" src="assets/elena-close.webp" alt="Портрет Елены Баклыковой">
+          <img class="about-photo" src="assets/elena-close.webp" alt="Портрет Елены Баклыковой" loading="lazy" decoding="async">
         </div>
         <div class="about-copy reveal">
           <div class="kicker">О специалисте</div>
@@ -596,6 +749,83 @@
           <article class="proof-card reveal"><div class="label">03 / Позиция</div><h3>Нет обещаний «100% списания»</h3><p>Исход процедуры зависит от фактов и поведения участников дела. Юридическая уверенность должна опираться на документы.</p></article>
         </div>
         <div class="proof-note production reveal"><div>В юридической работе доверие начинается с точности формулировок: если обстоятельство нельзя подтвердить документами, оно не должно превращаться в рекламное обещание.</div></div>
+      </div>
+    </section>
+
+    <section class="selfcheck" id="check">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <div>
+            <div class="kicker">Персональный первый шаг</div>
+            <div class="section-orbit">Без отправки данных на сервер</div>
+          </div>
+          <div>
+            <h2>Проверка ситуации <em>за 60 секунд</em></h2>
+            <p class="section-copy">Три вопроса не заменяют юридический анализ. Они помогают быстро понять, какие сведения подготовить и с чего начать разговор с Еленой.</p>
+          </div>
+        </div>
+
+        <div class="check-shell reveal" id="selfCheck">
+          <div class="check-aside">
+            <div>
+              <div class="kicker">Мини-диагностика</div>
+              <h3>Не анкета на двадцать полей.</h3>
+              <p>Вы выбираете три ответа. Сайт собирает короткий список того, что стоит подготовить, и формирует сообщение для WhatsApp.</p>
+            </div>
+            <div class="check-privacy">Ответы обрабатываются только в вашем браузере и никуда не отправляются, пока вы сами не нажмёте кнопку WhatsApp.</div>
+          </div>
+
+          <div class="check-main">
+            <div class="check-meta">
+              <span class="check-step" id="checkStep">Вопрос 1 из 3</span>
+              <div class="check-track" aria-hidden="true"><span id="checkProgress"></span></div>
+            </div>
+
+            <div class="check-question active" data-question="debt">
+              <h3>Что сейчас происходит с долгами?</h3>
+              <p>Выберите вариант, который ближе всего к вашей ситуации.</p>
+              <div class="check-options">
+                <button class="check-option" type="button" data-label="Платежи ещё вношу, но нагрузка стала тяжёлой">Плачу, но уже тяжело</button>
+                <button class="check-option" type="button" data-label="Есть просрочки по кредитам или займам">Есть просрочки</button>
+                <button class="check-option" type="button" data-label="Есть исполнительные производства или удержания приставов">Есть приставы / удержания</button>
+              </div>
+              <div class="check-hint">Это не определяет исход процедуры — только помогает подготовить первый разговор.</div>
+            </div>
+
+            <div class="check-question" data-question="assets">
+              <h3>Как обстоят дела с имуществом?</h3>
+              <p>Не нужно оценивать его юридический статус самостоятельно.</p>
+              <div class="check-options">
+                <button class="check-option" type="button" data-label="Крупного имущества, кроме обычных бытовых вещей, нет">Крупного имущества нет</button>
+                <button class="check-option" type="button" data-label="Есть квартира или другое жильё">Есть жильё</button>
+                <button class="check-option" type="button" data-label="Есть автомобиль, доли или иное значимое имущество">Есть авто / доли / другое имущество</button>
+              </div>
+              <div class="check-hint">Даже единственное жильё важно указать — выводы делаются после анализа документов.</div>
+            </div>
+
+            <div class="check-question" data-question="deals">
+              <h3>Были ли значимые сделки за последние годы?</h3>
+              <p>Например, продажа, дарение, переоформление имущества или крупные переводы.</p>
+              <div class="check-options">
+                <button class="check-option" type="button" data-label="Значимых сделок не помню">Нет / не помню</button>
+                <button class="check-option" type="button" data-label="Были продажи, дарение, переоформление или крупные переводы">Да, были</button>
+                <button class="check-option" type="button" data-label="Не уверен(а), какие сделки могут иметь значение">Не уверен(а)</button>
+              </div>
+              <div class="check-hint">Лучше рассказать о сомнительной сделке заранее, чем обнаружить её значение уже в процессе.</div>
+            </div>
+
+            <div class="check-result" id="checkResult" aria-live="polite">
+              <div class="result-badge">Готово · предварительно</div>
+              <h3>Что подготовить к первичному разбору</h3>
+              <ul class="prep-list" id="prepList"></ul>
+              <p class="result-note">Это не юридическое заключение и не обещание результата. Итоговая оценка возможна только после изучения обстоятельств и документов.</p>
+              <div class="result-actions">
+                <a class="btn dark" id="checkWhatsApp" href="#" target="_blank" rel="noopener">Отправить Елене в WhatsApp</a>
+                <button class="text-btn" id="checkReset" type="button">Пройти заново</button>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -699,6 +929,83 @@
         }
       });
     });
+
+    const selfCheck=document.getElementById('selfCheck');
+    if(selfCheck){
+      const questions=[...selfCheck.querySelectorAll('.check-question')];
+      const result=selfCheck.querySelector('#checkResult');
+      const stepEl=selfCheck.querySelector('#checkStep');
+      const bar=selfCheck.querySelector('#checkProgress');
+      const prep=selfCheck.querySelector('#prepList');
+      const wa=selfCheck.querySelector('#checkWhatsApp');
+      const reset=selfCheck.querySelector('#checkReset');
+      const answers={};
+      let step=0;
+
+      const prepByQuestion={
+        debt:{
+          'Платежи ещё вношу, но нагрузка стала тяжёлой':'примерную сумму долгов, кредиторов и размер ежемесячных платежей',
+          'Есть просрочки по кредитам или займам':'список кредиторов, примерные суммы долгов и сроки просрочек',
+          'Есть исполнительные производства или удержания приставов':'сведения об исполнительных производствах и текущих удержаниях'
+        },
+        assets:{
+          'Крупного имущества, кроме обычных бытовых вещей, нет':'сведения об имеющемся имуществе и зарегистрированных правах',
+          'Есть квартира или другое жильё':'документы на жильё и сведения о залоге или ипотеке, если они есть',
+          'Есть автомобиль, доли или иное значимое имущество':'документы на автомобиль, доли и другое значимое имущество'
+        },
+        deals:{
+          'Значимых сделок не помню':'вспомнить крупные сделки и переоформления за последние годы',
+          'Были продажи, дарение, переоформление или крупные переводы':'документы или основные сведения по значимым сделкам и переводам',
+          'Не уверен(а), какие сделки могут иметь значение':'перечень крупных продаж, дарений, переводов и переоформлений, которые вызывают сомнения'
+        }
+      };
+
+      const showStep=()=>{
+        questions.forEach((q,i)=>q.classList.toggle('active',i===step));
+        result.classList.remove('active');
+        stepEl.textContent='Вопрос '+(step+1)+' из '+questions.length;
+        bar.style.width=((step+1)/questions.length*100)+'%';
+      };
+
+      const finish=()=>{
+        questions.forEach(q=>q.classList.remove('active'));
+        result.classList.add('active');
+        stepEl.textContent='Готово';
+        bar.style.width='100%';
+        prep.innerHTML='';
+        Object.entries(answers).forEach(([key,value])=>{
+          const li=document.createElement('li');
+          li.textContent=prepByQuestion[key]?.[value] || value;
+          prep.appendChild(li);
+        });
+        const lines=[
+          'Здравствуйте, хочу первичный разбор ситуации по банкротству.',
+          '',
+          'Долги: '+(answers.debt||'не указано'),
+          'Имущество: '+(answers.assets||'не указано'),
+          'Сделки: '+(answers.deals||'не указано')
+        ];
+        wa.href='https://wa.me/79043770075?text='+encodeURIComponent(lines.join('\n'));
+      };
+
+      selfCheck.querySelectorAll('.check-option').forEach(btn=>{
+        btn.addEventListener('click',()=>{
+          const q=btn.closest('.check-question');
+          const key=q.dataset.question;
+          answers[key]=btn.dataset.label;
+          q.querySelectorAll('.check-option').forEach(b=>b.classList.toggle('selected',b===btn));
+          setTimeout(()=>{
+            if(step<questions.length-1){step++;showStep()}else{finish()}
+          },120);
+        });
+      });
+
+      reset.addEventListener('click',()=>{
+        Object.keys(answers).forEach(k=>delete answers[k]);
+        selfCheck.querySelectorAll('.check-option').forEach(b=>b.classList.remove('selected'));
+        step=0;showStep();
+      });
+    }
   </script>
 </body>
 </html>

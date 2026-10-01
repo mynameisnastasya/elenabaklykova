@@ -4,133 +4,238 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Елена Баклыкова — юрист по банкротству физических лиц</title>
-  <meta name="description" content="Юридическая помощь по банкротству физических лиц: разбор ситуации, подготовка к процедуре, сопровождение и понятное объяснение рисков и последствий.">
-  <meta name="theme-color" content="#171713">
-  <meta property="og:title" content="Елена Баклыкова — банкротство физических лиц">
-  <meta property="og:description" content="Спокойно разберём долги, риски и возможные сценарии. Без обещаний невозможного и юридического тумана.">
+  <meta name="description" content="Банкротство физических лиц: юридический анализ, подготовка документов и сопровождение процедуры. Прозрачная стоимость и предварительная оценка рисков.">
+  <meta name="theme-color" content="#0e1922">
+  <meta property="og:title" content="Елена Баклыкова — юрист по банкротству физических лиц">
+  <meta property="og:description" content="Юридическая помощь при долговой нагрузке. Анализ рисков, подготовка и сопровождение процедуры банкротства.">
   <meta property="og:type" content="website">
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23171713'/%3E%3Ctext x='32' y='42' text-anchor='middle' font-size='29' fill='%23f4f0e7' font-family='serif'%3EЕБ%3C/text%3E%3C/svg%3E">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%230e1922'/%3E%3Ctext x='32' y='42' text-anchor='middle' font-size='28' fill='%23d5b47c' font-family='serif'%3EЕБ%3C/text%3E%3C/svg%3E">
   <style>
     :root{
-      --ink:#171713; --paper:#f4f0e7; --paper2:#ebe5d8; --accent:#bdff55;
-      --muted:#726f67; --line:rgba(23,23,19,.14); --white:#fffdf8; --radius:28px;
-      --shadow:0 28px 80px rgba(28,24,17,.10);
+      --ink:#0e1922;
+      --ink2:#15242f;
+      --paper:#f4f1ea;
+      --paper2:#e9e4da;
+      --white:#fffdfa;
+      --gold:#b08b57;
+      --gold2:#d5b47c;
+      --text:#172028;
+      --muted:#6f716f;
+      --line:rgba(14,25,34,.14);
+      --darkline:rgba(255,255,255,.13);
+      --shadow:0 24px 70px rgba(14,25,34,.10);
+      --radius:22px;
     }
     *{box-sizing:border-box}
     html{scroll-behavior:smooth}
-    body{margin:0;background:var(--paper);color:var(--ink);font-family:Inter,ui-sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.5}
+    body{
+      margin:0;background:var(--paper);color:var(--text);
+      font-family:Inter,ui-sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+      line-height:1.55;-webkit-font-smoothing:antialiased
+    }
     a{color:inherit;text-decoration:none}
-    button,input{font:inherit}
-    .wrap{width:min(1180px,calc(100% - 32px));margin:auto}
-    .nav{position:sticky;top:0;z-index:20;background:rgba(244,240,231,.82);backdrop-filter:blur(18px);border-bottom:1px solid transparent;transition:.2s}
-    .nav.scrolled{border-color:var(--line)}
-    .navin{height:76px;display:flex;align-items:center;justify-content:space-between;gap:22px}
-    .brand{display:flex;align-items:center;gap:12px;font-weight:760;letter-spacing:-.02em}
-    .monogram{width:42px;height:42px;border-radius:50%;display:grid;place-items:center;background:var(--ink);color:var(--paper);font-family:Georgia,serif;font-size:15px}
-    .navlinks{display:flex;align-items:center;gap:28px;font-size:14px;color:#48463f}
-    .navlinks a:hover{color:#000}
-    .btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;border-radius:999px;padding:14px 20px;border:1px solid var(--ink);font-weight:700;cursor:pointer;transition:.2s;background:transparent}
-    .btn:hover{transform:translateY(-2px)}
-    .btn.dark{background:var(--ink);color:var(--paper)}
-    .btn.lime{background:var(--accent);border-color:var(--accent);color:var(--ink)}
-    .hero{padding:70px 0 52px}
-    .hero-grid{display:grid;grid-template-columns:1.18fr .82fr;gap:32px;align-items:stretch}
-    .eyebrow{display:inline-flex;align-items:center;gap:10px;font-size:13px;font-weight:800;text-transform:uppercase;letter-spacing:.12em}
-    .dot{width:9px;height:9px;background:var(--accent);border-radius:50%;box-shadow:0 0 0 5px rgba(189,255,85,.23)}
     h1,h2,h3,p{margin-top:0}
-    h1{font-size:clamp(54px,7.8vw,112px);line-height:.88;letter-spacing:-.07em;margin:28px 0 30px;max-width:950px}
-    .serif{font-family:Georgia,"Times New Roman",serif;font-weight:400;font-style:italic;letter-spacing:-.045em}
-    .lead{font-size:clamp(20px,2vw,26px);max-width:760px;color:#4c4941;line-height:1.35}
-    .hero-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:32px}
-    .hero-note{display:flex;gap:12px;align-items:flex-start;margin-top:28px;color:#656158;font-size:14px;max-width:670px}
-    .hero-card{background:var(--ink);color:var(--paper);border-radius:var(--radius);padding:34px;position:relative;overflow:hidden;min-height:530px;box-shadow:var(--shadow)}
-    .hero-card:before{content:"";position:absolute;width:330px;height:330px;border-radius:50%;background:var(--accent);right:-150px;top:-120px;filter:blur(3px)}
-    .hero-card:after{content:"";position:absolute;width:220px;height:220px;border:1px solid rgba(255,255,255,.18);border-radius:50%;right:-50px;bottom:-75px}
-    .card-top{display:flex;justify-content:space-between;align-items:center;position:relative;z-index:2}
-    .tag{font-size:12px;text-transform:uppercase;letter-spacing:.13em;color:#bbb8af}
-    .stamp{width:76px;height:76px;border-radius:50%;border:1px solid rgba(255,255,255,.25);display:grid;place-items:center;font-family:Georgia,serif;font-size:27px}
-    .portrait{position:absolute;left:34px;right:34px;bottom:36px;z-index:2}
-    .portrait .initials{font-family:Georgia,serif;font-size:clamp(88px,13vw,164px);line-height:.75;letter-spacing:-.08em;color:var(--paper)}
-    .portrait p{font-size:16px;color:#c9c5bc;max-width:330px;margin:26px 0 0}
-    .ticker{border-top:1px solid var(--line);border-bottom:1px solid var(--line);overflow:hidden;white-space:nowrap}
-    .ticker-track{display:inline-flex;gap:34px;padding:16px 0;font-size:13px;text-transform:uppercase;letter-spacing:.12em;font-weight:800;animation:marquee 24s linear infinite}
-    .ticker-track span:after{content:"↗";margin-left:34px;color:#777}
-    @keyframes marquee{to{transform:translateX(-50%)}}
+    .wrap{width:min(1180px,calc(100% - 36px));margin:auto}
+    .nav{
+      position:sticky;top:0;z-index:50;
+      background:rgba(244,241,234,.88);backdrop-filter:blur(18px);
+      border-bottom:1px solid transparent;transition:.2s ease
+    }
+    .nav.scrolled{border-color:var(--line)}
+    .navin{height:78px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+    .brand{display:flex;align-items:center;gap:13px}
+    .mark{
+      width:42px;height:42px;display:grid;place-items:center;
+      background:var(--ink);color:var(--gold2);border-radius:8px;
+      font-family:Georgia,"Times New Roman",serif;font-size:16px
+    }
+    .brandname{display:flex;flex-direction:column;line-height:1.15}
+    .brandname strong{font-size:15px;letter-spacing:.01em}
+    .brandname span{font-size:10px;text-transform:uppercase;letter-spacing:.16em;color:#73736d;margin-top:4px}
+    .navlinks{display:flex;gap:28px;align-items:center;font-size:13px;color:#50545a}
+    .navlinks a:hover{color:var(--ink)}
+    .btn{
+      display:inline-flex;align-items:center;justify-content:center;gap:9px;
+      padding:14px 19px;border-radius:8px;border:1px solid var(--ink);
+      font-size:13px;font-weight:750;letter-spacing:.01em;transition:.2s ease
+    }
+    .btn:hover{transform:translateY(-2px);box-shadow:0 10px 24px rgba(14,25,34,.10)}
+    .btn.dark{background:var(--ink);color:#fff;border-color:var(--ink)}
+    .btn.light{border-color:rgba(255,255,255,.35);color:#fff}
+    .btn.gold{background:var(--gold);border-color:var(--gold);color:#fff}
+    .hero{padding:78px 0 72px}
+    .hero-grid{display:grid;grid-template-columns:1.12fr .88fr;gap:36px;align-items:stretch}
+    .eyebrow{
+      display:flex;align-items:center;gap:12px;
+      font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:.18em;color:#5f625f
+    }
+    .eyebrow:before{content:"";width:42px;height:1px;background:var(--gold)}
+    h1{
+      font-family:Georgia,"Times New Roman",serif;
+      font-size:clamp(54px,7.5vw,100px);line-height:.97;
+      font-weight:400;letter-spacing:-.045em;margin:30px 0 30px;color:var(--ink)
+    }
+    h1 em{font-weight:400;color:var(--gold);font-style:italic}
+    .lead{font-size:clamp(19px,2vw,24px);line-height:1.42;color:#51575c;max-width:760px}
+    .hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:31px}
+    .legal-note{
+      display:grid;grid-template-columns:22px 1fr;gap:10px;margin-top:28px;
+      color:#737673;font-size:13px;max-width:690px
+    }
+    .hero-card{
+      background:var(--ink);color:#fff;border-radius:var(--radius);padding:34px;
+      min-height:550px;position:relative;overflow:hidden;box-shadow:var(--shadow)
+    }
+    .hero-card:before{
+      content:"§";position:absolute;right:-12px;bottom:-72px;
+      font-family:Georgia,serif;font-size:390px;line-height:1;color:rgba(255,255,255,.025)
+    }
+    .hero-top{display:flex;justify-content:space-between;gap:16px;align-items:flex-start;position:relative;z-index:2}
+    .hero-label{font-size:11px;text-transform:uppercase;letter-spacing:.17em;color:#aeb6bb}
+    .seal{
+      width:86px;height:86px;border:1px solid rgba(213,180,124,.55);border-radius:50%;
+      display:grid;place-items:center;color:var(--gold2);font-family:Georgia,serif;font-size:29px
+    }
+    .card-body{position:absolute;left:34px;right:34px;bottom:34px;z-index:2}
+    .law-number{font-family:Georgia,serif;font-size:68px;line-height:1;color:var(--gold2);margin-bottom:22px}
+    .card-body h3{font-family:Georgia,serif;font-weight:400;font-size:32px;line-height:1.08;margin-bottom:16px}
+    .card-body p{color:#bac2c7;margin:0;max-width:380px}
+    .trustbar{border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+    .trustgrid{display:grid;grid-template-columns:repeat(3,1fr)}
+    .trustitem{padding:22px 26px;border-right:1px solid var(--line)}
+    .trustitem:last-child{border-right:0}
+    .trustitem strong{display:block;font-family:Georgia,serif;font-size:22px;font-weight:400;color:var(--ink)}
+    .trustitem span{font-size:12px;color:#777975}
     section{padding:100px 0}
-    .section-head{display:grid;grid-template-columns:.72fr 1.28fr;gap:30px;align-items:start;margin-bottom:50px}
-    .kicker{font-size:13px;text-transform:uppercase;letter-spacing:.13em;font-weight:800;color:#69665e}
-    h2{font-size:clamp(42px,6vw,78px);line-height:.98;letter-spacing:-.055em;margin-bottom:0}
+    .section-head{display:grid;grid-template-columns:.68fr 1.32fr;gap:30px;align-items:start;margin-bottom:48px}
+    .kicker{font-size:11px;text-transform:uppercase;letter-spacing:.18em;font-weight:800;color:#747672;padding-top:9px}
+    h2{
+      font-family:Georgia,"Times New Roman",serif;font-weight:400;
+      font-size:clamp(42px,5.4vw,72px);line-height:1.02;letter-spacing:-.04em;margin:0;color:var(--ink)
+    }
+    h2 em{color:var(--gold);font-weight:400}
     .cards3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
-    .card{background:var(--white);border:1px solid var(--line);border-radius:24px;padding:28px;min-height:260px;transition:.25s}
-    .card:hover{transform:translateY(-5px);box-shadow:var(--shadow)}
-    .num{font-size:13px;font-weight:800;color:#807c72;margin-bottom:58px}
-    .card h3{font-size:26px;letter-spacing:-.035em;margin-bottom:12px}
-    .card p{color:#666158;margin-bottom:0}
-    .dark-section{background:var(--ink);color:var(--paper);border-radius:40px;margin:0 16px}
-    .dark-section .kicker,.dark-section .muted{color:#a9a59b}
-    .steps{display:grid;gap:0}
-    .step{display:grid;grid-template-columns:80px 1fr 1fr;gap:22px;padding:30px 0;border-top:1px solid rgba(255,255,255,.13);align-items:start}
-    .step:last-child{border-bottom:1px solid rgba(255,255,255,.13)}
-    .step b{font-size:13px;color:var(--accent)}
-    .step h3{font-size:28px;letter-spacing:-.03em;margin:0}
-    .step p{color:#bdb9ae;margin:2px 0 0;max-width:520px}
-    .split{display:grid;grid-template-columns:1fr 1fr;gap:18px}
-    .panel{border-radius:28px;padding:34px;border:1px solid var(--line);background:var(--white)}
-    .panel.lime{background:var(--accent);border-color:var(--accent)}
-    .panel h3{font-size:34px;letter-spacing:-.04em}
-    .checklist{display:grid;gap:14px;margin-top:28px}
-    .check{display:flex;gap:13px;align-items:flex-start;padding-top:14px;border-top:1px solid rgba(23,23,19,.13)}
-    .check i{font-style:normal;width:24px;height:24px;border-radius:50%;display:grid;place-items:center;background:var(--ink);color:var(--paper);font-size:12px;flex:0 0 auto}
-    .faq{display:grid;grid-template-columns:.75fr 1.25fr;gap:44px}
+    .card{
+      background:var(--white);border:1px solid var(--line);border-radius:16px;padding:29px;
+      min-height:275px;transition:.25s ease
+    }
+    .card:hover{transform:translateY(-4px);box-shadow:var(--shadow)}
+    .num{font-size:11px;font-weight:800;letter-spacing:.13em;text-transform:uppercase;color:var(--gold);margin-bottom:58px}
+    .card h3{font-family:Georgia,serif;font-size:27px;font-weight:400;line-height:1.12;color:var(--ink);margin-bottom:14px}
+    .card p{color:#666c70;margin-bottom:0;font-size:15px}
+    .pricing{background:#eae5db}
+    .pricing-intro{max-width:760px;color:#646965;font-size:16px;margin-top:18px}
+    .price-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:44px}
+    .price{
+      background:var(--white);border:1px solid var(--line);border-radius:16px;padding:28px;
+      display:flex;flex-direction:column;min-height:360px
+    }
+    .price.featured{background:var(--ink);color:#fff;border-color:var(--ink);transform:translateY(-8px)}
+    .price-tag{font-size:10px;text-transform:uppercase;letter-spacing:.16em;font-weight:800;color:var(--gold);min-height:24px}
+    .price.featured .price-tag{color:var(--gold2)}
+    .price h3{font-family:Georgia,serif;font-size:25px;font-weight:400;line-height:1.13;margin:18px 0 8px;color:var(--ink)}
+    .price.featured h3{color:#fff}
+    .amount{font-family:Georgia,serif;font-size:44px;letter-spacing:-.035em;color:var(--ink);margin:14px 0 18px}
+    .price.featured .amount{color:#fff}
+    .amount small{font-family:Inter,sans-serif;font-size:12px;letter-spacing:0;color:#7c807c}
+    .price.featured .amount small{color:#aeb5ba}
+    .price p{font-size:14px;color:#707471;margin-bottom:18px}
+    .price.featured p{color:#bac1c6}
+    .price ul{list-style:none;padding:0;margin:auto 0 0;display:grid;gap:9px;font-size:13px}
+    .price li{padding-top:9px;border-top:1px solid var(--line)}
+    .price.featured li{border-color:var(--darkline);color:#d2d7da}
+    .price-note{
+      margin-top:18px;padding:22px 24px;border:1px solid rgba(176,139,87,.35);
+      background:rgba(255,253,250,.55);border-radius:12px;color:#5f635f;font-size:13px
+    }
+    .price-note strong{color:var(--ink)}
+    .dark-section{background:var(--ink);color:#fff;margin:0 18px;border-radius:24px}
+    .dark-section h2{color:#fff}
+    .dark-section .kicker{color:#9ba5ab}
+    .steps{display:grid}
+    .step{
+      display:grid;grid-template-columns:72px 1fr 1.2fr;gap:26px;align-items:start;
+      padding:29px 0;border-top:1px solid var(--darkline)
+    }
+    .step:last-child{border-bottom:1px solid var(--darkline)}
+    .step b{font-size:12px;letter-spacing:.13em;color:var(--gold2)}
+    .step h3{font-family:Georgia,serif;font-size:29px;font-weight:400;margin:0}
+    .step p{color:#b5bec3;margin:2px 0 0;max-width:520px;font-size:15px}
+    .principles{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+    .panel{border:1px solid var(--line);background:var(--white);border-radius:16px;padding:32px}
+    .panel.accent{background:#ede4d5;border-color:#dfd0ba}
+    .panel h3{font-family:Georgia,serif;font-size:32px;font-weight:400;color:var(--ink)}
+    .checklist{display:grid;gap:13px;margin-top:28px}
+    .check{display:grid;grid-template-columns:24px 1fr;gap:12px;padding-top:13px;border-top:1px solid var(--line);font-size:14px;color:#5e6468}
+    .check i{font-style:normal;color:var(--gold);font-weight:900}
+    .faq{display:grid;grid-template-columns:.72fr 1.28fr;gap:50px}
+    .faq-copy p{color:#6f7371;margin-top:20px;max-width:360px}
     .faq-list{border-top:1px solid var(--line)}
-    details{border-bottom:1px solid var(--line);padding:21px 0}
-    summary{list-style:none;cursor:pointer;font-size:21px;font-weight:700;display:flex;justify-content:space-between;gap:20px}
+    details{border-bottom:1px solid var(--line);padding:22px 0}
+    summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;gap:18px;font-family:Georgia,serif;font-size:22px;color:var(--ink)}
     summary::-webkit-details-marker{display:none}
-    summary:after{content:"+";font-size:28px;font-weight:400;line-height:1}
+    summary:after{content:"+";font-family:Inter,sans-serif;font-size:24px;color:var(--gold)}
     details[open] summary:after{content:"−"}
-    details p{color:#666158;max-width:760px;margin:16px 34px 2px 0}
-    .cta{background:var(--accent);border-radius:36px;padding:48px;display:grid;grid-template-columns:1.2fr .8fr;gap:30px;align-items:end}
-    .cta h2{font-size:clamp(48px,6vw,84px)}
-    .cta p{font-size:18px;max-width:620px}
-    .cta-side{display:flex;flex-direction:column;align-items:flex-start;gap:14px}
-    .contact-placeholder{font-size:14px;padding:14px 0;border-top:1px solid rgba(23,23,19,.2);width:100%}
-    footer{padding:48px 0 70px;color:#656158}
-    .foot{display:grid;grid-template-columns:1fr 1fr;gap:30px;padding-top:28px;border-top:1px solid var(--line);font-size:13px}
-    .reveal{opacity:0;transform:translateY(18px);transition:.7s ease}
+    details p{color:#686d70;margin:14px 40px 0 0;font-size:14px}
+    .cta{
+      background:var(--ink2);color:#fff;border-radius:20px;padding:46px;
+      display:grid;grid-template-columns:1.2fr .8fr;gap:34px;align-items:end;position:relative;overflow:hidden
+    }
+    .cta:after{content:"ЕБ";position:absolute;right:-15px;top:-38px;font-family:Georgia,serif;font-size:240px;color:rgba(255,255,255,.025)}
+    .cta .kicker{color:#9eabb2}
+    .cta h2{color:#fff;font-size:clamp(42px,5vw,68px);margin-top:14px}
+    .cta p{color:#bdc5ca;font-size:16px;max-width:650px}
+    .cta-side{position:relative;z-index:2;display:grid;gap:13px}
+    .contact-row{border-top:1px solid var(--darkline);padding-top:14px;color:#c4ccd0;font-size:13px}
+    .contact-row strong{display:block;color:#fff;margin-bottom:3px}
+    footer{padding:46px 0 65px;color:#6f7371}
+    .foot{display:grid;grid-template-columns:1fr 1fr;gap:30px;padding-top:24px;border-top:1px solid var(--line);font-size:12px}
+    .reveal{opacity:0;transform:translateY(14px);transition:.65s ease}
     .reveal.on{opacity:1;transform:none}
+    @media(max-width:1050px){.price-grid{grid-template-columns:repeat(2,1fr)}.price.featured{transform:none}}
     @media(max-width:900px){
       .navlinks{display:none}
-      .hero-grid,.section-head,.faq,.cta,.split{grid-template-columns:1fr}
-      .hero-card{min-height:430px}
+      .hero-grid,.section-head,.faq,.cta,.principles{grid-template-columns:1fr}
       .cards3{grid-template-columns:1fr}
+      .trustgrid{grid-template-columns:1fr}
+      .trustitem{border-right:0;border-bottom:1px solid var(--line)}
+      .trustitem:last-child{border-bottom:0}
+      .hero-card{min-height:440px}
       .step{grid-template-columns:52px 1fr}
       .step p{grid-column:2}
-      section{padding:72px 0}
-      .dark-section{border-radius:28px;margin:0 8px}
+      section{padding:74px 0}
+      .dark-section{margin:0 8px}
     }
-    @media(max-width:560px){
-      .wrap{width:min(100% - 20px,1180px)}
-      .navin{height:68px}
-      .nav .btn{padding:11px 14px;font-size:13px}
-      .hero{padding-top:42px}
-      h1{font-size:52px}
-      .hero-card{padding:24px;min-height:390px}
-      .portrait{left:24px;right:24px;bottom:28px}
-      .card,.panel{padding:24px}
-      .cta{padding:28px;border-radius:26px}
+    @media(max-width:620px){
+      .wrap{width:min(100% - 22px,1180px)}
+      .navin{height:68px}.brandname span{display:none}
+      .nav .btn{font-size:11px;padding:11px 12px}
+      .hero{padding:48px 0 52px}
+      h1{font-size:50px}
+      .hero-card{padding:25px;min-height:400px}
+      .card-body{left:25px;right:25px;bottom:25px}
+      .price-grid{grid-template-columns:1fr}
+      .price{min-height:auto}
+      .cta{padding:28px}
       .foot{grid-template-columns:1fr}
     }
-    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.ticker-track{animation:none}.reveal{opacity:1;transform:none}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.reveal{opacity:1;transform:none}}
   </style>
 </head>
 <body>
   <nav class="nav" id="nav">
     <div class="wrap navin">
-      <a class="brand" href="#top"><span class="monogram">ЕБ</span><span>Елена Баклыкова</span></a>
+      <a class="brand" href="#top">
+        <span class="mark">ЕБ</span>
+        <span class="brandname"><strong>Елена Баклыкова</strong><span>Юридическая практика</span></span>
+      </a>
       <div class="navlinks">
-        <a href="#situations">Ситуации</a><a href="#process">Как работаем</a><a href="#faq">Вопросы</a>
+        <a href="#services">Услуги</a>
+        <a href="#prices">Стоимость</a>
+        <a href="#process">Этапы</a>
+        <a href="#faq">Вопросы</a>
       </div>
-      <a class="btn dark" href="#contact">Разобрать ситуацию ↗</a>
+      <a class="btn dark" href="#contact">Консультация</a>
     </div>
   </nav>
 
@@ -138,42 +243,125 @@
     <section class="hero">
       <div class="wrap hero-grid">
         <div>
-          <div class="eyebrow"><span class="dot"></span> Банкротство физических лиц</div>
-          <h1>Долги — это задача. <span class="serif">Не приговор.</span></h1>
-          <p class="lead">Помогаю понять, подходит ли вам банкротство, какие есть риски и что будет происходить на каждом этапе — без давления, громких обещаний и юридического тумана.</p>
+          <div class="eyebrow">Банкротство физических лиц</div>
+          <h1>Правовое решение, когда <em>долги давят</em></h1>
+          <p class="lead">Разбираю финансовую ситуацию, оцениваю риски и сопровождаю процедуру банкротства — последовательно, конфиденциально и без обещаний результата до изучения документов.</p>
           <div class="hero-actions">
             <a class="btn dark" href="#contact">Получить первичный разбор</a>
-            <a class="btn" href="#process">Посмотреть этапы</a>
+            <a class="btn" href="#prices">Посмотреть стоимость</a>
           </div>
-          <div class="hero-note"><span>ⓘ</span><span>Результат процедуры зависит от обстоятельств конкретного дела. До начала работы важно оценить имущество, сделки, доход, состав долгов и возможные последствия.</span></div>
+          <div class="legal-note"><span>§</span><span>Банкротство — юридическая процедура с последствиями и ограничениями. Решение о её начале должно приниматься после анализа долгов, имущества, доходов и сделок.</span></div>
         </div>
         <aside class="hero-card">
-          <div class="card-top"><span class="tag">Юридическая практика</span><span class="stamp">ЕБ</span></div>
-          <div class="portrait">
-            <div class="initials">ЕБ</div>
-            <p>Елена Баклыкова. Сопровождение по вопросам несостоятельности граждан и подготовка к процедуре банкротства.</p>
+          <div class="hero-top">
+            <span class="hero-label">Частная юридическая практика</span>
+            <span class="seal">ЕБ</span>
+          </div>
+          <div class="card-body">
+            <div class="law-number">127-ФЗ</div>
+            <h3>Елена Баклыкова</h3>
+            <p>Юридическая помощь по вопросам несостоятельности граждан: от предварительной оценки ситуации до сопровождения процедуры.</p>
           </div>
         </aside>
       </div>
     </section>
 
-    <div class="ticker">
-      <div class="ticker-track">
-        <span>Кредиты и займы</span><span>Исполнительные производства</span><span>Банкротство граждан</span><span>Анализ рисков</span><span>Подготовка документов</span>
-        <span>Кредиты и займы</span><span>Исполнительные производства</span><span>Банкротство граждан</span><span>Анализ рисков</span><span>Подготовка документов</span>
+    <div class="trustbar">
+      <div class="wrap trustgrid">
+        <div class="trustitem"><strong>Конфиденциально</strong><span>Финансовая ситуация обсуждается только в рамках работы по делу</span></div>
+        <div class="trustitem"><strong>Прозрачно</strong><span>Стоимость и состав работ определяются до начала сопровождения</span></div>
+        <div class="trustitem"><strong>По существу</strong><span>Сначала риски и документы — потом решение о процедуре</span></div>
       </div>
     </div>
 
-    <section id="situations">
+    <section id="services">
       <div class="wrap">
         <div class="section-head reveal">
-          <div class="kicker">Когда стоит разобраться</div>
-          <h2>Сначала — <span class="serif">диагностика</span>, потом решение</h2>
+          <div class="kicker">Когда нужна помощь</div>
+          <h2>Не продавать банкротство. <em>Сначала понять задачу.</em></h2>
         </div>
         <div class="cards3">
-          <article class="card reveal"><div class="num">01 / Долговая нагрузка</div><h3>Платежи перестали сходиться с доходом</h3><p>Разберём состав обязательств, просрочки, исполнительные производства и возможные варианты действий.</p></article>
-          <article class="card reveal"><div class="num">02 / Взыскание</div><h3>Приставы удерживают деньги или есть ограничения</h3><p>Оценим, что происходит сейчас, какие меры применены и как процедура банкротства может повлиять на взыскание.</p></article>
-          <article class="card reveal"><div class="num">03 / Риски</div><h3>Есть имущество, сделки или совместная собственность</h3><p>Такие обстоятельства нельзя прятать. Их нужно заранее проверить, чтобы понимать реальные правовые последствия.</p></article>
+          <article class="card reveal">
+            <div class="num">01 / Долговая нагрузка</div>
+            <h3>Платежи перестали укладываться в доход</h3>
+            <p>Разберём кредиты, займы, просрочки и исполнительные производства. Сравним возможные правовые сценарии.</p>
+          </article>
+          <article class="card reveal">
+            <div class="num">02 / Взыскание</div>
+            <h3>Есть приставы, удержания или ограничения</h3>
+            <p>Проверим текущую стадию взыскания и то, как возможная процедура банкротства повлияет на ситуацию.</p>
+          </article>
+          <article class="card reveal">
+            <div class="num">03 / Имущество и сделки</div>
+            <h3>Нужно заранее оценить риски</h3>
+            <p>Квартира, автомобиль, доли, совместное имущество и сделки требуют отдельного анализа до подачи заявления.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="pricing" id="prices">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <div class="kicker">Стоимость</div>
+          <div>
+            <h2>Понятный прайс <em>без мелкого шрифта</em></h2>
+            <p class="pricing-intro">Цены ориентированы на рынок юридического сопровождения банкротства физических лиц в 2026 году. Итоговая стоимость зависит от сложности дела и фиксируется до начала работ.</p>
+          </div>
+        </div>
+
+        <div class="price-grid">
+          <article class="price reveal">
+            <div class="price-tag">Старт</div>
+            <h3>Первичный разбор ситуации</h3>
+            <div class="amount">0 ₽</div>
+            <p>Короткая оценка исходных данных и понимание, есть ли смысл двигаться дальше.</p>
+            <ul>
+              <li>Состав долгов</li>
+              <li>Доход и имущество</li>
+              <li>Предварительный маршрут</li>
+            </ul>
+          </article>
+
+          <article class="price reveal">
+            <div class="price-tag">Диагностика</div>
+            <h3>Правовой анализ и стратегия</h3>
+            <div class="amount">4 900 ₽</div>
+            <p>Глубокий разбор документов, сделок и правовых рисков перед началом процедуры.</p>
+            <ul>
+              <li>Анализ документов</li>
+              <li>Карта рисков</li>
+              <li>Письменный план действий</li>
+            </ul>
+          </article>
+
+          <article class="price reveal">
+            <div class="price-tag">Подготовка</div>
+            <h3>Заявление и комплект документов</h3>
+            <div class="amount">от 15 000 ₽</div>
+            <p>Подготовка процессуального пакета для обращения в арбитражный суд.</p>
+            <ul>
+              <li>Проверка сведений</li>
+              <li>Подготовка заявления</li>
+              <li>Формирование приложений</li>
+            </ul>
+          </article>
+
+          <article class="price featured reveal">
+            <div class="price-tag">Основная услуга</div>
+            <h3>Судебное банкротство «под ключ»</h3>
+            <div class="amount">от 89 000 ₽ <small>юридические услуги</small></div>
+            <p>Сопровождение процедуры от подготовки до завершения в рамках согласованного объёма работ.</p>
+            <ul>
+              <li>Подготовка и процессуальные документы</li>
+              <li>Сопровождение по делу</li>
+              <li>Коммуникация по этапам процедуры</li>
+            </ul>
+          </article>
+        </div>
+
+        <div class="price-note reveal">
+          <strong>Отдельно от услуг юриста:</strong> в судебном банкротстве закон предусматривает вознаграждение финансового управляющего — 25 000 ₽ за одну процедуру; также возможны фактические расходы на публикации, корреспонденцию и иные действия по делу. Они рассчитываются отдельно до начала процедуры. Внесудебное банкротство через МФЦ при наличии законных оснований проводится бесплатно; платная юридическая помощь для подачи заявления не обязательна.
         </div>
       </div>
     </section>
@@ -181,15 +369,15 @@
     <section class="dark-section" id="process">
       <div class="wrap">
         <div class="section-head reveal">
-          <div class="kicker">Процесс</div>
-          <h2>Понятный маршрут, <span class="serif">без хаоса</span></h2>
+          <div class="kicker">Как строится работа</div>
+          <h2>Каждый этап должен быть <em>понятен заранее</em></h2>
         </div>
         <div class="steps">
-          <div class="step reveal"><b>01</b><h3>Первичный разбор</h3><p>Собираем картину: кому и сколько вы должны, доходы, имущество, семейное положение, сделки, исполнительные производства.</p></div>
-          <div class="step reveal"><b>02</b><h3>Правовая стратегия</h3><p>Обсуждаем, подходит ли судебное или внесудебное банкротство, какие риски есть и какие альтернативы стоит рассмотреть.</p></div>
-          <div class="step reveal"><b>03</b><h3>Подготовка</h3><p>Формируем пакет документов, проверяем сведения и готовим необходимые процессуальные материалы.</p></div>
-          <div class="step reveal"><b>04</b><h3>Процедура</h3><p>Сопровождаем взаимодействие по делу и объясняем, что происходит на каждом этапе и какие действия нужны от вас.</p></div>
-          <div class="step reveal"><b>05</b><h3>Завершение</h3><p>Разбираем итог процедуры и дальнейшие ограничения. Возможность освобождения от обязательств оценивается только по обстоятельствам конкретного дела.</p></div>
+          <div class="step reveal"><b>01</b><h3>Исходные данные</h3><p>Фиксируем кредиторов, сумму долгов, доходы, имущество, семейное положение, сделки и исполнительные производства.</p></div>
+          <div class="step reveal"><b>02</b><h3>Правовая оценка</h3><p>Проверяем судебное и внесудебное банкротство, альтернативы, ограничения и потенциально спорные обстоятельства.</p></div>
+          <div class="step reveal"><b>03</b><h3>Подготовка</h3><p>Собираем сведения и готовим документы. До подачи клиент понимает стоимость, ключевые риски и последовательность действий.</p></div>
+          <div class="step reveal"><b>04</b><h3>Сопровождение</h3><p>Ведём процессуальную работу в согласованном объёме и объясняем, что происходит по делу на каждом этапе.</p></div>
+          <div class="step reveal"><b>05</b><h3>Завершение</h3><p>Анализируем итог процедуры и дальнейшие правовые последствия. Освобождение от обязательств зависит от обстоятельств конкретного дела.</p></div>
         </div>
       </div>
     </section>
@@ -197,26 +385,26 @@
     <section>
       <div class="wrap">
         <div class="section-head reveal">
-          <div class="kicker">Принципы работы</div>
-          <h2>Юридическая помощь, в которой <span class="serif">всё по-человечески</span></h2>
+          <div class="kicker">Подход к делу</div>
+          <h2>Доверие строится на <em>неудобных вопросах</em></h2>
         </div>
-        <div class="split">
+        <div class="principles">
           <div class="panel reveal">
-            <h3>Что важно до старта</h3>
+            <h3>До начала процедуры</h3>
             <div class="checklist">
-              <div class="check"><i>✓</i><span>Не скрывать имущество, сделки и источники дохода.</span></div>
-              <div class="check"><i>✓</i><span>Понимать не только плюсы, но и ограничения процедуры.</span></div>
-              <div class="check"><i>✓</i><span>Проверить, какие долги потенциально могут не списываться.</span></div>
-              <div class="check"><i>✓</i><span>Не принимать решение только из-за рекламы «спишем всё».</span></div>
+              <div class="check"><i>01</i><span>Проверяем имущество, сделки и источники дохода — не скрываем значимые обстоятельства.</span></div>
+              <div class="check"><i>02</i><span>Разбираем долги, которые могут не подпадать под освобождение от обязательств.</span></div>
+              <div class="check"><i>03</i><span>Обсуждаем последствия и ограничения, а не только преимущества процедуры.</span></div>
+              <div class="check"><i>04</i><span>Считаем юридические и обязательные расходы до подписания договора.</span></div>
             </div>
           </div>
-          <div class="panel lime reveal">
-            <h3>Что вы получаете</h3>
+          <div class="panel accent reveal">
+            <h3>В ходе работы</h3>
             <div class="checklist">
-              <div class="check"><i>→</i><span>Понятный разбор именно вашей ситуации.</span></div>
-              <div class="check"><i>→</i><span>Предварительную карту рисков до начала процедуры.</span></div>
-              <div class="check"><i>→</i><span>Список документов и последовательность действий.</span></div>
-              <div class="check"><i>→</i><span>Сопровождение без перегруза канцеляритом.</span></div>
+              <div class="check"><i>→</i><span>Один понятный маршрут по делу вместо разрозненных рекомендаций.</span></div>
+              <div class="check"><i>→</i><span>Документы и сроки под контролем в рамках согласованного сопровождения.</span></div>
+              <div class="check"><i>→</i><span>Юридические формулировки переводятся на обычный человеческий язык.</span></div>
+              <div class="check"><i>→</i><span>Никаких обещаний «100% списания» до анализа обстоятельств дела.</span></div>
             </div>
           </div>
         </div>
@@ -225,18 +413,18 @@
 
     <section id="faq">
       <div class="wrap faq">
-        <div class="reveal">
-          <div class="kicker">FAQ</div>
-          <h2 style="margin-top:18px">Без мелкого <span class="serif">шрифта</span></h2>
-          <p class="muted">Ключевые вопросы, которые стоит обсудить ещё до подачи заявления.</p>
+        <div class="faq-copy reveal">
+          <div class="kicker">Частые вопросы</div>
+          <h2 style="margin-top:18px">Спокойно и <em>по закону</em></h2>
+          <p>Ниже — общая информация. Точный ответ зависит от состава долгов, имущества и истории конкретного человека.</p>
         </div>
         <div class="faq-list reveal">
-          <details><summary>Все ли долги списываются при банкротстве?</summary><p>Нет. Закон предусматривает обязательства, от которых гражданин может не освобождаться. Конкретный состав долгов нужно анализировать до начала процедуры.</p></details>
-          <details><summary>Что будет с квартирой, автомобилем и другим имуществом?</summary><p>Это зависит от вида имущества, оснований владения, залога, статуса единственного жилья и других обстоятельств. Универсального ответа без документов здесь нет.</p></details>
-          <details><summary>Можно ли банкротиться, если есть официальный доход?</summary><p>Сам по себе доход не означает автоматический запрет. Значение имеет вся финансовая ситуация, размер обязательств, имущество и применимая процедура.</p></details>
-          <details><summary>Нужно ли заранее рассказывать о сделках?</summary><p>Да. Сделки за предшествующий период могут иметь значение для дела и должны оцениваться юристом до подачи документов.</p></details>
-          <details><summary>Сколько длится процедура?</summary><p>Срок зависит от обстоятельств дела, выбранной процедуры, состава имущества, споров и работы участников процесса. Корректнее оценивать его после первичного анализа.</p></details>
-          <details><summary>Можно ли сначала просто понять, подходит ли мне банкротство?</summary><p>Да. Именно с этого и стоит начинать: собрать факты, оценить риски и только потом принимать решение о процедуре.</p></details>
+          <details><summary>Все ли долги списываются?</summary><p>Нет. Закон предусматривает обязательства и обстоятельства, при которых освобождение от долгов не применяется. Поэтому состав обязательств проверяется заранее.</p></details>
+          <details><summary>Что будет с единственным жильём?</summary><p>Ответ зависит от характеристик жилья, наличия залога и других обстоятельств. Имущество нельзя оценивать по одному признаку — важен полный контекст дела.</p></details>
+          <details><summary>Можно ли пройти процедуру при официальном доходе?</summary><p>Сам по себе официальный доход не означает автоматического запрета. Оценивается вся финансовая ситуация и применимая процедура.</p></details>
+          <details><summary>Зачем анализировать старые сделки?</summary><p>Потому что сделки до банкротства могут стать предметом проверки и споров. Их лучше оценить до подачи документов, а не уже в процессе.</p></details>
+          <details><summary>Почему «под ключ» стоит от 89 000 ₽?</summary><p>Стоимость юридического сопровождения включает подготовку, процессуальную работу и ведение дела в согласованном объёме. Сложные имущественные и спорные ситуации могут потребовать иной стоимости.</p></details>
+          <details><summary>Внесудебное банкротство через МФЦ платное?</summary><p>Нет. Сама процедура в МФЦ проводится бесплатно. Юридические услуги могут понадобиться только если вы хотите отдельно проверить основания, документы и риски.</p></details>
         </div>
       </div>
     </section>
@@ -245,14 +433,14 @@
       <div class="wrap">
         <div class="cta reveal">
           <div>
-            <div class="kicker">Первичный разбор</div>
-            <h2 style="margin:18px 0 18px">Разберём вашу ситуацию <span class="serif">по фактам</span></h2>
-            <p>Подготовьте примерную сумму долгов, список кредиторов, сведения об имуществе и доходе. Этого достаточно, чтобы начать предметный разговор.</p>
+            <div class="kicker">Первичный разбор — 0 ₽</div>
+            <h2>Начать с фактов, а не с обещаний</h2>
+            <p>Для первого разговора достаточно знать примерную сумму долгов, список кредиторов, наличие имущества, официальный доход и крупные сделки за последние годы.</p>
           </div>
           <div class="cta-side">
-            <a class="btn dark" href="#contacts-note">Контакты для записи ↓</a>
-            <div class="contact-placeholder" id="contacts-note"><strong>Телефон / мессенджер:</strong><br>будет добавлен после подтверждения контактов Елены</div>
-            <div class="contact-placeholder"><strong>География:</strong><br>указать город и возможность дистанционной работы</div>
+            <a class="btn gold" href="#contact-data">Контакты для записи</a>
+            <div class="contact-row" id="contact-data"><strong>Телефон / мессенджер</strong>Добавить подтверждённый контакт Елены</div>
+            <div class="contact-row"><strong>Формат работы</strong>Добавить город и возможность дистанционной консультации</div>
           </div>
         </div>
       </div>
@@ -262,14 +450,14 @@
   <footer>
     <div class="wrap foot">
       <div><strong>Елена Баклыкова</strong><br>Юридическая помощь по вопросам банкротства физических лиц.</div>
-      <div>Информация на сайте носит общий характер и не является обещанием результата. Правовая позиция формируется после изучения обстоятельств и документов конкретного клиента.</div>
+      <div>Стоимость на сайте носит информационный характер и не является публичной офертой. Итоговая цена и объём услуг фиксируются в договоре. Информация на сайте не является гарантией результата по конкретному делу.</div>
     </div>
   </footer>
 
   <script>
     const nav=document.getElementById('nav');
     addEventListener('scroll',()=>nav.classList.toggle('scrolled',scrollY>10),{passive:true});
-    const io=new IntersectionObserver((entries)=>entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('on');io.unobserve(e.target)}}),{threshold:.12});
+    const io=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('on');io.unobserve(e.target)}}),{threshold:.1});
     document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
   </script>
 </body>

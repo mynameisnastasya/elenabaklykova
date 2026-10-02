@@ -1,0 +1,11 @@
+{
+  "name": "Елена Баклыкова — юрист по банкротству физических лиц",
+  "short_name": "Елена Баклыкова",
+  "description": "Юридическая помощь по банкротству физических лиц",
+  "lang": "ru-RU",
+  "start_url": "/elenabaklykova/",
+  "scope": "/elenabaklykova/",
+  "display": "standalone",
+  "background_color": "#f6f1eb",
+  "theme_color": "#2f241f"
+}

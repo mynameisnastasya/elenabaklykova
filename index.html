@@ -2,627 +2,352 @@
 <html lang="ru">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Елена Баклыкова — банкротство физических лиц без правовой слепой зоны</title>
-  <meta name="description" content="Елена Баклыкова — юрист по банкротству физических лиц. Сначала проверка рисков, имущества, сделок и долгов — потом решение о процедуре.">
-  <meta name="theme-color" content="#3a2b22">
-  <meta name="robots" content="index,follow,max-image-preview:large">
-  <link rel="canonical" href="https://mynameisnastasya.github.io/elenabaklykova/">
-  <link rel="preload" as="image" href="assets/elena-main.webp" fetchpriority="high">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Елена Баклыкова — юрист по банкротству физических лиц</title>
+  <meta name="description" content="Юридическая помощь по банкротству физических лиц: проверка рисков, карта действий и сопровождение процедуры. Сначала анализ — потом решение.">
+  <meta name="theme-color" content="#2f241f">
   <meta property="og:title" content="Елена Баклыкова — юрист по банкротству физических лиц">
-  <meta property="og:description" content="Сначала проверка рисков. Потом решение о банкротстве. Юридическая диагностика, понятный маршрут и сопровождение процедуры.">
+  <meta property="og:description" content="Сначала анализ рисков. Потом решение о банкротстве.">
   <meta property="og:type" content="website">
   <meta property="og:image" content="https://mynameisnastasya.github.io/elenabaklykova/assets/elena-main.webp">
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%233a2b22'/%3E%3Ctext x='32' y='42' text-anchor='middle' font-size='28' fill='%23f5efe6' font-family='serif'%3EЕБ%3C/text%3E%3C/svg%3E">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%232f241f'/%3E%3Ctext x='32' y='42' text-anchor='middle' font-size='27' fill='%23f6efe8' font-family='serif'%3EЕБ%3C/text%3E%3C/svg%3E">
   <style>
     :root{
-      --brown:#3a2b22;
-      --brown2:#4a382d;
-      --paper:#f6f0e7;
-      --paper2:#ede4d8;
-      --card:#fffaf4;
-      --ink:#2d2926;
-      --muted:#6f6862;
-      --accent:#a96f48;
-      --accent2:#c99b78;
-      --line:rgba(58,43,34,.16);
-      --darkline:rgba(255,255,255,.14);
-      --shadow:0 24px 70px rgba(63,45,34,.12);
+      --ink:#2f241f;
+      --ink-2:#493831;
+      --paper:#f6f1eb;
+      --paper-2:#ebe1d6;
+      --paper-3:#ded1c4;
+      --card:#fffaf5;
+      --text:#312d2a;
+      --muted:#756d67;
+      --terra:#b97858;
+      --terra-2:#d0a28c;
+      --sage:#85907c;
+      --line:rgba(47,36,31,.14);
+      --line-dark:rgba(255,255,255,.16);
+      --shadow:0 28px 80px rgba(47,36,31,.11);
       --serif:Georgia,"Times New Roman",serif;
       --sans:Inter,ui-sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+      --radius:18px;
     }
     *{box-sizing:border-box}
-    html{scroll-behavior:smooth}
-    body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);line-height:1.55;-webkit-font-smoothing:antialiased}
+    html{scroll-behavior:smooth;scroll-padding-top:90px}
+    body{
+      margin:0;background:var(--paper);color:var(--text);font-family:var(--sans);
+      line-height:1.55;-webkit-font-smoothing:antialiased;overflow-x:hidden
+    }
+    body:before{
+      content:"";position:fixed;inset:0;pointer-events:none;z-index:-1;opacity:.28;
+      background-image:radial-gradient(rgba(47,36,31,.09) .55px,transparent .55px);
+      background-size:8px 8px
+    }
     a{color:inherit;text-decoration:none}
+    button{font:inherit}
     h1,h2,h3,p{margin-top:0}
+    img{max-width:100%}
+    ::selection{background:#d9b7a4;color:var(--ink)}
+    :focus-visible{outline:2px solid var(--terra);outline-offset:4px;border-radius:5px}
     .wrap{width:min(1180px,calc(100% - 36px));margin:auto}
-    .nav{position:sticky;top:0;z-index:50;background:rgba(246,240,231,.9);backdrop-filter:blur(18px);border-bottom:1px solid transparent;transition:.2s}
-    .nav.scrolled{border-color:var(--line)}
+    .skip{position:fixed;left:16px;top:-70px;z-index:200;background:var(--ink);color:#fff;padding:10px 14px;border-radius:7px;transition:.2s}
+    .skip:focus{top:14px}
+    .progress{position:fixed;left:0;top:0;right:0;height:2px;z-index:120;pointer-events:none}
+    .progress span{display:block;height:100%;background:var(--terra);transform:scaleX(0);transform-origin:left;will-change:transform}
+
+    .nav{
+      position:sticky;top:0;z-index:100;background:rgba(246,241,235,.88);backdrop-filter:blur(18px);
+      border-bottom:1px solid transparent;transition:border-color .2s,box-shadow .2s
+    }
+    .nav.scrolled{border-color:var(--line);box-shadow:0 12px 34px rgba(47,36,31,.045)}
     .navin{height:76px;display:flex;align-items:center;justify-content:space-between;gap:24px}
-    .brand{display:flex;align-items:center;gap:13px}
-    .mark{width:42px;height:42px;display:grid;place-items:center;background:var(--brown);color:#fff6eb;border-radius:8px;font-family:var(--serif);font-size:16px}
-    .brandname{display:flex;flex-direction:column;line-height:1.12}
-    .brandname strong{font-size:15px}
-    .brandname span{font-size:10px;text-transform:uppercase;letter-spacing:.17em;color:#7e746c;margin-top:4px}
-    .navlinks{display:flex;gap:25px;align-items:center;font-size:13px;color:#5f5852}
-    .navlinks a:hover{color:var(--brown)}
-    .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:14px 18px;border:1px solid var(--brown);border-radius:7px;font-size:13px;font-weight:750;transition:.2s;background:transparent}
-    .btn:hover{transform:translateY(-2px);box-shadow:0 12px 26px rgba(58,43,34,.12)}
-    .btn.dark{background:var(--brown);color:#fff;border-color:var(--brown)}
-    .btn.ghost-dark{color:#fff;border-color:rgba(255,255,255,.36)}
-    .btn.accent{background:var(--accent);border-color:var(--accent);color:#fff}
+    .brand{display:flex;align-items:center;gap:12px}
+    .monogram{width:42px;height:42px;border-radius:9px;display:grid;place-items:center;background:var(--ink);color:#f6ede5;font-family:var(--serif);font-size:16px}
+    .brandtext{line-height:1.1}
+    .brandtext strong{display:block;font-size:14px}
+    .brandtext span{display:block;margin-top:4px;font-size:9px;text-transform:uppercase;letter-spacing:.17em;color:#817972}
+    .links{display:flex;gap:25px;align-items:center;font-size:12px;color:#655e59}
+    .links a{position:relative;padding:8px 0}
+    .links a:after{content:"";position:absolute;left:0;right:100%;bottom:2px;height:1px;background:var(--terra);transition:right .22s}
+    .links a:hover:after,.links a.active:after{right:0}
+    .links a.active{color:var(--ink)}
+    .btn{
+      display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:13px 17px;border-radius:8px;
+      border:1px solid var(--ink);background:transparent;font-size:12px;font-weight:800;letter-spacing:.01em;
+      cursor:pointer;transition:transform .18s,box-shadow .18s,background .18s,border-color .18s
+    }
+    .btn:hover{transform:translateY(-2px);box-shadow:0 12px 28px rgba(47,36,31,.11)}
+    .btn.dark{background:var(--ink);border-color:var(--ink);color:#fff}
+    .btn.cream{border-color:rgba(255,255,255,.38);color:#fff}
+    .btn.terra{background:var(--terra);border-color:var(--terra);color:#fff}
 
-    .hero{padding:68px 0 56px}
-    .hero-grid{display:grid;grid-template-columns:1.08fr .92fr;gap:42px;align-items:stretch}
-    .eyebrow{display:flex;align-items:center;gap:12px;font-size:11px;text-transform:uppercase;letter-spacing:.18em;font-weight:800;color:#756d67}
-    .eyebrow:before{content:"";width:42px;height:1px;background:var(--accent)}
-    h1{font-family:var(--serif);font-weight:400;font-size:clamp(55px,7.3vw,96px);line-height:.94;letter-spacing:-.045em;color:var(--brown);margin:28px 0 28px}
-    h1 em{font-weight:400;color:var(--accent);font-style:italic}
-    .hero-position{font-family:var(--serif);font-size:clamp(22px,2.3vw,31px);line-height:1.2;color:var(--brown);max-width:760px;margin-bottom:20px}
-    .lead{font-size:17px;line-height:1.58;color:#625d58;max-width:730px}
-    .hero-actions{display:flex;flex-wrap:wrap;gap:11px;margin-top:30px}
-    .microproof{display:grid;grid-template-columns:repeat(3,1fr);gap:0;margin-top:38px;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
-    .microproof div{padding:16px 18px 16px 0;border-right:1px solid var(--line);margin-right:18px}
-    .microproof div:last-child{border-right:0;margin-right:0}
-    .microproof strong{display:block;font-family:var(--serif);font-weight:400;font-size:19px;color:var(--brown)}
-    .microproof span{font-size:11px;color:#817a74}
-    .hero-card{position:relative;min-height:630px;overflow:hidden;border-radius:18px;background:var(--brown);box-shadow:var(--shadow);isolation:isolate}
-    .hero-photo{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 28%;z-index:0}
-    .hero-card:before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(48,34,27,.05) 10%,rgba(48,34,27,.12) 48%,rgba(48,34,27,.92) 100%);z-index:1}
-    .hero-card:after{content:"";position:absolute;inset:15px;border:1px solid rgba(255,243,228,.4);border-radius:12px;z-index:2}
-    .hero-top{position:relative;z-index:3;padding:28px;display:flex;justify-content:space-between;gap:16px;align-items:flex-start}
-    .hero-label{font-size:10px;text-transform:uppercase;letter-spacing:.18em;color:#f4e7dc}
-    .seal{width:82px;height:82px;border:1px solid rgba(255,243,228,.55);border-radius:50%;display:grid;place-items:center;color:#fff1df;font-family:var(--serif);font-size:28px}
-    .hero-card-copy{position:absolute;z-index:3;left:30px;right:30px;bottom:30px;color:#fff}
-    .hero-card-copy .law{font-size:10px;text-transform:uppercase;letter-spacing:.18em;color:#e5cbb7;margin-bottom:11px}
-    .hero-card-copy h3{font-family:var(--serif);font-weight:400;font-size:36px;line-height:1.05;margin-bottom:13px}
-    .hero-card-copy p{font-size:14px;color:#eadfd7;max-width:390px;margin-bottom:0}
+    .hero{padding:62px 0 48px}
+    .hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:48px;align-items:center}
+    .eyebrow{display:flex;align-items:center;gap:12px;font-size:10px;text-transform:uppercase;letter-spacing:.2em;font-weight:800;color:#7b716a}
+    .eyebrow:before{content:"";width:40px;height:1px;background:var(--terra)}
+    h1{
+      font-family:var(--serif);font-weight:400;font-size:clamp(58px,7.2vw,94px);line-height:.94;letter-spacing:-.045em;
+      color:var(--ink);margin:27px 0 28px
+    }
+    h1 em{font-weight:400;color:var(--terra);font-style:italic}
+    .hero-sub{font-family:var(--serif);font-size:clamp(22px,2.15vw,29px);line-height:1.22;color:var(--ink);max-width:720px;margin-bottom:18px}
+    .hero-copy{max-width:710px;color:#665f5a;font-size:16px}
+    .hero-actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:29px}
+    .hero-proof{display:grid;grid-template-columns:repeat(3,1fr);margin-top:36px;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+    .hero-proof div{padding:15px 18px 15px 0;border-right:1px solid var(--line);margin-right:18px}
+    .hero-proof div:last-child{border-right:0;margin-right:0}
+    .hero-proof strong{display:block;font-family:var(--serif);font-weight:400;font-size:19px;color:var(--ink)}
+    .hero-proof span{display:block;font-size:10px;color:#837b75;margin-top:2px}
+    .portrait{
+      position:relative;min-height:645px;border-radius:20px;overflow:hidden;background:var(--ink);
+      box-shadow:var(--shadow);isolation:isolate
+    }
+    .portrait img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 27%;transform:scale(1.025) translateY(var(--shift,0));will-change:transform}
+    .portrait:before{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(180deg,rgba(47,36,31,.02) 20%,rgba(47,36,31,.08) 50%,rgba(47,36,31,.9) 100%)}
+    .portrait:after{content:"";position:absolute;inset:14px;z-index:2;border:1px solid rgba(255,246,238,.42);border-radius:13px}
+    .portrait-top{position:relative;z-index:3;display:flex;justify-content:space-between;padding:28px}
+    .portrait-top span:first-child{font-size:9px;text-transform:uppercase;letter-spacing:.18em;color:#f5e7dc}
+    .seal{width:78px;height:78px;border:1px solid rgba(255,246,238,.58);border-radius:50%;display:grid;place-items:center;font-family:var(--serif);font-size:27px;color:#fff}
+    .portrait-note{
+      position:absolute;z-index:3;left:28px;right:28px;bottom:28px;color:#fff;
+      display:grid;grid-template-columns:auto 1fr;gap:15px;align-items:start
+    }
+    .portrait-note .dot{width:9px;height:9px;border-radius:50%;background:var(--terra-2);margin-top:7px;box-shadow:0 0 0 5px rgba(208,162,140,.15)}
+    .portrait-note h3{font-family:var(--serif);font-weight:400;font-size:31px;line-height:1.06;margin-bottom:8px}
+    .portrait-note p{font-size:13px;color:#e7ddd6;margin:0;max-width:390px}
 
-    .position-strip{background:var(--brown);color:#fff;padding:0}
-    .position-grid{display:grid;grid-template-columns:.74fr 1.26fr;gap:44px;align-items:center;padding:30px 0}
-    .position-grid .label{font-size:10px;text-transform:uppercase;letter-spacing:.2em;color:#d7bda9}
-    .position-grid .phrase{font-family:var(--serif);font-size:clamp(26px,3vw,42px);line-height:1.06}
-    .position-grid .phrase em{color:#d8ab8a}
+    .quote-strip{background:var(--ink);color:#fff}
+    .quote-grid{display:grid;grid-template-columns:.32fr 1.68fr;gap:36px;align-items:center;padding:28px 0}
+    .quote-grid .label{font-size:9px;text-transform:uppercase;letter-spacing:.2em;color:#c7aa97}
+    .quote-grid .statement{font-family:var(--serif);font-size:clamp(25px,3vw,39px);line-height:1.08}
+    .quote-grid em{color:#d8a98c;font-weight:400}
 
-    section{padding:96px 0}
-    .kicker{font-size:10px;text-transform:uppercase;letter-spacing:.2em;font-weight:800;color:#80766f;padding-top:8px}
-    .section-head{display:grid;grid-template-columns:.64fr 1.36fr;gap:36px;align-items:start;margin-bottom:46px}
-    h2{font-family:var(--serif);font-weight:400;font-size:clamp(42px,5.2vw,70px);line-height:1.02;letter-spacing:-.035em;color:var(--brown);margin:0}
-    h2 em{font-weight:400;color:var(--accent)}
-    .section-copy{font-size:17px;color:#68615b;max-width:760px;margin-top:18px}
+    section{padding:92px 0}
+    .section-head{display:grid;grid-template-columns:.6fr 1.4fr;gap:40px;align-items:start;margin-bottom:44px}
+    .kicker{font-size:9px;text-transform:uppercase;letter-spacing:.2em;font-weight:800;color:#847a73;padding-top:8px}
+    h2{font-family:var(--serif);font-weight:400;font-size:clamp(43px,5.1vw,68px);line-height:1.02;letter-spacing:-.035em;color:var(--ink);margin:0}
+    h2 em{font-weight:400;color:var(--terra)}
+    .section-copy{font-size:16px;color:#6c645f;max-width:750px;margin-top:17px}
 
-    .pain-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
-    .pain-card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:25px;min-height:245px;transition:.22s}
-    .pain-card:hover{transform:translateY(-3px);box-shadow:var(--shadow)}
-    .pain-card .n{width:36px;height:36px;border:1px solid var(--line);border-radius:50%;display:grid;place-items:center;font-family:var(--serif);color:var(--accent);margin-bottom:44px}
-    .pain-card h3{font-family:var(--serif);font-weight:400;font-size:24px;line-height:1.12;color:var(--brown);margin-bottom:12px}
-    .pain-card p{font-size:14px;color:#716b66;margin:0}
+    .fit{padding-top:56px}
+    .fit-grid{display:grid;grid-template-columns:.7fr 1.3fr;gap:14px}
+    .fit-lead{background:var(--ink);color:#fff;border-radius:16px;padding:30px;display:flex;flex-direction:column;min-height:330px}
+    .fit-lead .pill{width:max-content;border:1px solid rgba(255,255,255,.22);border-radius:999px;padding:7px 10px;font-size:8px;text-transform:uppercase;letter-spacing:.19em;color:#dac6b8}
+    .fit-lead h3{font-family:var(--serif);font-size:38px;line-height:1.06;font-weight:400;margin:auto 0 14px}
+    .fit-lead p{font-size:13px;color:#d8cbc3;margin:0}
+    .fit-cards{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+    .fit-card{border-radius:16px;padding:24px;min-height:158px;border:1px solid rgba(47,36,31,.08);transition:.22s}
+    .fit-card:nth-child(1){background:#eee1d8}
+    .fit-card:nth-child(2){background:#e4e7dd}
+    .fit-card:nth-child(3){background:#eadfdd}
+    .fit-card:nth-child(4){background:#eee7dc}
+    .fit-card:hover{transform:translateY(-4px);box-shadow:0 20px 45px rgba(47,36,31,.08)}
+    .fit-card b{display:block;font-family:var(--serif);font-weight:400;font-size:21px;color:var(--ink);margin-bottom:7px}
+    .fit-card span{font-size:13px;color:#716a65}
 
-    .method{background:var(--brown);color:#fff;margin:0 16px;border-radius:22px}
-    .method h2{color:#fff}
-    .method .kicker{color:#d0b5a1}
-    .method .section-copy{color:#d7cbc3}
-    .method-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:0;border-top:1px solid var(--darkline);border-bottom:1px solid var(--darkline)}
-    .method-card{padding:30px 28px;border-right:1px solid var(--darkline);min-height:310px}
-    .method-card:last-child{border-right:0}
-    .method-card .num{font-family:var(--serif);font-size:46px;color:#c8916d;margin-bottom:44px}
-    .method-card h3{font-family:var(--serif);font-weight:400;font-size:26px;line-height:1.1;margin-bottom:14px}
-    .method-card p{font-size:14px;color:#d1c6bf;margin:0}
-    .method-outcome{display:grid;grid-template-columns:.7fr 1.3fr;gap:40px;padding-top:32px;align-items:start}
-    .method-outcome strong{font-family:var(--serif);font-size:25px;font-weight:400}
-    .method-outcome p{color:#d1c6bf;margin:0;font-size:15px}
+    .method{background:var(--ink);color:#fff;margin:0 14px;border-radius:22px}
+    .method h2{color:#fff}.method .kicker{color:#c9ab98}.method .section-copy{color:#d7cbc4}
+    .steps{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--line-dark);border-bottom:1px solid var(--line-dark)}
+    .step{padding:29px 27px;border-right:1px solid var(--line-dark);min-height:300px;transition:background .2s}
+    .step:last-child{border-right:0}.step:hover{background:rgba(255,255,255,.035)}
+    .step-num{font-family:var(--serif);font-size:45px;color:#d49a7b;margin-bottom:42px;transition:transform .25s}
+    .step:hover .step-num{transform:translateY(-4px)}
+    .step:nth-child(2) .step-num{color:#b7c0ab}.step:nth-child(3) .step-num{color:#d1aaa2}.step:nth-child(4) .step-num{color:#d7c0a3}
+    .step h3{font-family:var(--serif);font-size:25px;font-weight:400;margin-bottom:12px}
+    .step p{font-size:13px;color:#d0c5be;margin:0}
+    .method-result{display:grid;grid-template-columns:.72fr 1.28fr;gap:38px;padding-top:30px}
+    .method-result strong{font-family:var(--serif);font-size:24px;font-weight:400}
+    .method-result p{font-size:14px;color:#d0c5be;margin:0}
 
-    .diagnostic-grid{display:grid;grid-template-columns:.92fr 1.08fr;gap:24px;align-items:stretch}
-    .artifact{background:#eee4d8;border:1px solid #d8cabb;border-radius:14px;padding:32px;position:relative;box-shadow:0 16px 40px rgba(74,52,39,.08)}
-    .artifact:before{content:"";position:absolute;left:50%;top:-17px;transform:translateX(-50%);width:72px;height:25px;background:rgba(196,181,167,.7);border:1px solid rgba(122,108,96,.22);transform-origin:center;rotate:-2deg}
-    .artifact .art-kicker{font-size:10px;text-transform:uppercase;letter-spacing:.18em;color:#84766c;margin-bottom:12px}
-    .artifact h3{font-family:var(--serif);font-size:34px;font-weight:400;color:var(--brown);margin-bottom:28px}
-    .artifact-row{display:grid;grid-template-columns:32px 1fr;gap:12px;padding:13px 0;border-top:1px solid rgba(58,43,34,.12)}
-    .artifact-row b{font-family:var(--serif);font-weight:400;color:var(--accent);font-size:20px}
-    .artifact-row span{font-size:14px;color:#5f5954}
-    .diagnostic-copy{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:34px}
-    .diagnostic-copy h3{font-family:var(--serif);font-size:36px;font-weight:400;color:var(--brown);line-height:1.08}
-    .value-list{display:grid;gap:0;margin-top:24px}
-    .value-item{display:grid;grid-template-columns:26px 1fr;gap:12px;padding:14px 0;border-top:1px solid var(--line);font-size:14px;color:#67615c}
-    .value-item i{font-style:normal;color:var(--accent);font-weight:800}
+    .deliverable-grid{display:grid;grid-template-columns:.92fr 1.08fr;gap:20px}
+    .paper-card{
+      background:#eee4d9;border:1px solid #d7c8bb;border-radius:14px;padding:31px;position:relative;
+      box-shadow:0 18px 48px rgba(47,36,31,.08);transform:rotate(-.35deg)
+    }
+    .paper-card:before{content:"";position:absolute;left:50%;top:-14px;width:70px;height:23px;transform:translateX(-50%) rotate(-2deg);background:rgba(192,178,164,.75);border:1px solid rgba(90,76,65,.16)}
+    .paper-card .tiny{font-size:9px;text-transform:uppercase;letter-spacing:.19em;color:#81746b}
+    .paper-card h3{font-family:var(--serif);font-size:34px;font-weight:400;color:var(--ink);margin:13px 0 25px}
+    .paper-row{display:grid;grid-template-columns:34px 1fr;gap:10px;padding:13px 0;border-top:1px solid rgba(47,36,31,.12)}
+    .paper-row b{font-family:var(--serif);font-weight:400;color:var(--terra);font-size:20px}
+    .paper-row span{font-size:13px;color:#605954}
+    .value-card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:32px}
+    .value-card h3{font-family:var(--serif);font-size:35px;line-height:1.08;font-weight:400;color:var(--ink)}
+    .value-list{display:grid;margin-top:22px}
+    .value-list div{display:grid;grid-template-columns:25px 1fr;gap:11px;padding:13px 0;border-top:1px solid var(--line);font-size:13px;color:#675f5a}
+    .value-list i{font-style:normal;color:var(--terra);font-weight:800}
 
-    .not-do{background:#e9dfd2}
-    .not-do-grid{display:grid;grid-template-columns:.84fr 1.16fr;gap:50px;align-items:start}
-    .not-do-card{background:var(--brown);color:#fff;border-radius:14px;padding:34px}
-    .not-do-card .big{font-family:var(--serif);font-size:38px;line-height:1.08;margin-bottom:20px}
-    .not-do-card p{color:#dfd2ca;font-size:14px}
-    .not-do-list{display:grid}
-    .not-do-item{display:grid;grid-template-columns:44px 1fr;gap:16px;padding:18px 0;border-top:1px solid var(--line)}
-    .not-do-item:last-child{border-bottom:1px solid var(--line)}
-    .not-do-item span:first-child{font-family:var(--serif);font-size:23px;color:var(--accent)}
-    .not-do-item strong{display:block;font-family:var(--serif);font-size:22px;font-weight:400;color:var(--brown);margin-bottom:4px}
-    .not-do-item p{font-size:14px;color:#6f6862;margin:0}
-
-    .about{padding:92px 0}
+    .about{background:#eadfd4}
     .about-grid{display:grid;grid-template-columns:.78fr 1.22fr;gap:52px;align-items:center}
-    .about-photo-wrap{position:relative}
-    .about-photo{width:100%;display:block;aspect-ratio:4/5;object-fit:cover;object-position:center 22%;border-radius:16px;box-shadow:var(--shadow)}
-    .about-photo-wrap:after{content:"";position:absolute;inset:14px;border:1px solid rgba(255,244,232,.62);border-radius:10px}
-    .about-copy h2{font-size:clamp(42px,5vw,64px);margin-bottom:22px}
-    .about-copy>p{font-size:17px;color:#625d58;max-width:690px}
-    .about-principle{margin-top:28px;padding:22px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);font-family:var(--serif);font-size:27px;line-height:1.18;color:var(--brown)}
-    .about-principle em{color:var(--accent)}
-    .about-grid-small{display:grid;grid-template-columns:1fr 1fr;gap:12px 26px;margin-top:24px}
-    .about-grid-small div{font-size:13px;color:#716b66}
-    .about-grid-small strong{display:block;color:var(--brown);font-family:var(--serif);font-size:19px;font-weight:400;margin-bottom:4px}
+    .about-photo{position:relative}
+    .about-photo img{width:100%;display:block;aspect-ratio:4/5;object-fit:cover;object-position:center 23%;border-radius:16px;box-shadow:var(--shadow)}
+    .about-photo:after{content:"";position:absolute;inset:13px;border:1px solid rgba(255,247,239,.7);border-radius:11px}
+    .about-copy h2{font-size:clamp(42px,5vw,64px);margin:13px 0 22px}
+    .about-copy>p{font-size:16px;color:#625b56}
+    .principle{margin:28px 0 22px;padding:20px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);font-family:var(--serif);font-size:26px;line-height:1.18;color:var(--ink)}
+    .principle em{color:var(--terra)}
+    .about-mini{display:grid;grid-template-columns:1fr 1fr;gap:12px 26px}
+    .about-mini div{font-size:12px;color:#706863}.about-mini strong{display:block;font-family:var(--serif);font-size:18px;font-weight:400;color:var(--ink);margin-bottom:3px}
 
-    .pricing{background:#f0e7dc}
-    .price-grid{display:grid;grid-template-columns:.9fr 1fr 1.15fr;gap:14px;margin-top:42px}
-    .price-card{background:var(--card);border:1px solid var(--line);border-radius:13px;padding:28px;display:flex;flex-direction:column;min-height:390px}
-    .price-card.featured{background:var(--brown);color:#fff;border-color:var(--brown);transform:translateY(-8px)}
-    .price-tag{font-size:10px;text-transform:uppercase;letter-spacing:.17em;font-weight:800;color:var(--accent);min-height:22px}
-    .price-card.featured .price-tag{color:#d8ad8e}
-    .price-card h3{font-family:var(--serif);font-weight:400;font-size:27px;line-height:1.12;color:var(--brown);margin:18px 0 10px}
-    .price-card.featured h3{color:#fff}
-    .amount{font-family:var(--serif);font-size:44px;color:var(--brown);letter-spacing:-.035em;margin:12px 0 17px}
-    .price-card.featured .amount{color:#fff}
-    .amount small{font-family:var(--sans);font-size:11px;color:#80766f;letter-spacing:0}
-    .price-card.featured .amount small{color:#cbbdb3}
-    .price-card>p{font-size:14px;color:#6e6863}
-    .price-card.featured>p{color:#d4c8c1}
-    .price-list{list-style:none;padding:0;margin:auto 0 0;display:grid;gap:0;font-size:13px}
-    .price-list li{padding:11px 0;border-top:1px solid var(--line)}
-    .price-card.featured .price-list li{border-color:var(--darkline);color:#e1d7d1}
-    .price-foot{margin-top:18px;display:grid;grid-template-columns:1fr 1fr;gap:12px}
-    .price-note{background:rgba(255,250,244,.7);border:1px solid var(--line);border-radius:10px;padding:18px 20px;font-size:13px;color:#6b645f}
-    .price-note strong{color:var(--brown)}
+    .prices{display:grid;grid-template-columns:.85fr 1fr 1.15fr;gap:13px}
+    .price{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:27px;display:flex;flex-direction:column;min-height:382px;transition:.22s}
+    .price:hover:not(.featured){transform:translateY(-4px);box-shadow:0 22px 50px rgba(47,36,31,.09)}
+    .price.featured{background:var(--ink);color:#fff;border-color:var(--ink);box-shadow:0 28px 68px rgba(47,36,31,.16);transform:translateY(-7px)}
+    .price-tag{font-size:9px;text-transform:uppercase;letter-spacing:.18em;font-weight:800;color:var(--terra)}
+    .featured .price-tag{color:#d5aa90}
+    .price h3{font-family:var(--serif);font-size:26px;font-weight:400;color:var(--ink);line-height:1.12;margin:17px 0 8px}.featured h3{color:#fff}
+    .amount{font-family:var(--serif);font-size:43px;color:var(--ink);margin:11px 0 17px}.featured .amount{color:#fff}
+    .amount small{font-family:var(--sans);font-size:10px;color:#817871}.featured .amount small{color:#c9bdb5}
+    .price>p{font-size:13px;color:#6c655f}.featured>p{color:#d0c5be}
+    .price ul{list-style:none;padding:0;margin:auto 0 0;font-size:12px}
+    .price li{padding:10px 0;border-top:1px solid var(--line)}.featured li{border-color:var(--line-dark);color:#ddd3cd}
+    .price-notes{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:17px}
+    .price-note{background:#eee5dc;border:1px solid var(--line);border-radius:10px;padding:17px 19px;font-size:12px;color:#68615c}.price-note strong{color:var(--ink)}
 
-    .proof-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:13px}
-    .proof-card{border-top:1px solid var(--brown);padding:22px 10px 0 0}
-    .proof-card .label{font-size:10px;text-transform:uppercase;letter-spacing:.18em;color:#877b72}
-    .proof-card h3{font-family:var(--serif);font-size:25px;font-weight:400;color:var(--brown);margin:38px 0 11px}
-    .proof-card p{font-size:14px;color:#706965}
-    .proof-note{margin-top:28px;padding:20px 24px;background:#eee3d7;border-radius:10px;font-size:13px;color:#6f6862}
+    .check{background:linear-gradient(180deg,var(--paper) 0%,#eee3d8 100%)}
+    .check-shell{display:grid;grid-template-columns:.72fr 1.28fr;border-radius:18px;overflow:hidden;background:var(--ink);box-shadow:var(--shadow)}
+    .check-intro{padding:33px;color:#fff;min-height:490px;display:flex;flex-direction:column;justify-content:space-between;background:radial-gradient(circle at 12% 12%,rgba(185,120,88,.22),transparent 34%),var(--ink)}
+    .check-intro h3{font-family:var(--serif);font-size:45px;line-height:1.03;font-weight:400;margin:13px 0 16px}
+    .check-intro p{font-size:13px;color:#d7cbc4;max-width:370px}
+    .privacy{font-size:10px;color:#bdb0a8;padding-top:18px;border-top:1px solid var(--line-dark)}
+    .check-main{background:var(--card);padding:32px;min-height:490px;display:flex;flex-direction:column}
+    .check-meta{display:flex;align-items:center;gap:16px;margin-bottom:30px}
+    .check-step{font-size:10px;text-transform:uppercase;letter-spacing:.16em;color:#837970;white-space:nowrap}
+    .track{height:3px;flex:1;background:#e4d8ce;border-radius:99px;overflow:hidden}.track span{display:block;height:100%;width:33.3%;background:linear-gradient(90deg,var(--terra),var(--sage));transition:width .3s}
+    .question{display:none;animation:qIn .28s ease}.question.active{display:block}
+    .question h3,.result h3{font-family:var(--serif);font-size:36px;line-height:1.08;font-weight:400;color:var(--ink);margin-bottom:9px}
+    .question>p{font-size:13px;color:#736b65;margin-bottom:22px}
+    .options{display:grid;gap:9px}
+    .option{width:100%;text-align:left;border:1px solid var(--line);background:#fff;border-radius:11px;padding:15px 17px;color:var(--ink);cursor:pointer;display:flex;justify-content:space-between;gap:14px;align-items:center;font:600 13px var(--sans);transition:.18s}
+    .option:after{content:"→";font-family:var(--serif);font-size:19px;color:var(--terra)}
+    .option:hover,.option.selected{transform:translateX(3px);background:#efe4da;border-color:rgba(185,120,88,.35)}
+    .hint{margin-top:auto;padding-top:22px;font-size:10px;color:#8a817b}
+    .result{display:none}.result.active{display:flex;flex-direction:column;height:100%;animation:qIn .28s ease}
+    .result-badge{width:max-content;padding:6px 9px;border-radius:999px;background:#e2e6db;color:#596253;font-size:8px;text-transform:uppercase;letter-spacing:.17em;margin-bottom:17px}
+    .prep{list-style:none;padding:0;margin:13px 0 18px;font-size:12px}.prep li{padding:9px 0;border-top:1px solid var(--line);color:#625b56}.prep li:before{content:"✓";color:var(--sage);font-weight:900;margin-right:9px}
+    .result-actions{display:flex;flex-wrap:wrap;gap:8px;margin-top:auto}
+    .text-btn{border:0;background:transparent;text-decoration:underline;text-underline-offset:4px;color:#726963;cursor:pointer;padding:10px 3px;font:600 11px var(--sans)}
+    @keyframes qIn{from{opacity:0;transform:translateY(5px)}to{opacity:1;transform:none}}
 
-    .faq{display:grid;grid-template-columns:.72fr 1.28fr;gap:50px}
-    .faq-copy p{color:#716b66;margin-top:18px;max-width:360px}
+    .faq{display:grid;grid-template-columns:.72fr 1.28fr;gap:48px}
+    .faq-copy p{font-size:13px;color:#736b65;max-width:350px;margin-top:17px}
     .faq-list{border-top:1px solid var(--line)}
-    details{border-bottom:1px solid var(--line);padding:21px 0}
-    summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;gap:18px;font-family:var(--serif);font-size:22px;color:var(--brown)}
-    summary::-webkit-details-marker{display:none}
-    summary:after{content:"+";font-family:var(--sans);font-size:22px;color:var(--accent)}
-    details[open] summary:after{content:"−"}
-    details p{font-size:14px;color:#6f6862;margin:14px 38px 0 0}
+    details{border-bottom:1px solid var(--line);padding:19px 3px;transition:background .18s}
+    details[open]{background:rgba(255,250,245,.4)}
+    summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;gap:16px;font-family:var(--serif);font-size:21px;color:var(--ink)}
+    summary::-webkit-details-marker{display:none}summary:after{content:"+";font-family:var(--sans);font-size:20px;color:var(--terra)}details[open] summary:after{content:"−"}
+    details p{font-size:13px;color:#6f6762;margin:12px 38px 0 0;animation:qIn .22s ease}
 
-    .cta{background:var(--brown);color:#fff;border-radius:18px;padding:44px;display:grid;grid-template-columns:1.2fr .8fr;gap:36px;align-items:end;position:relative;overflow:hidden}
-    .cta:after{content:"ЕБ";position:absolute;right:-15px;top:-45px;font-family:var(--serif);font-size:250px;color:rgba(255,255,255,.025)}
-    .cta .kicker{color:#d1b6a2}
-    .cta h2{color:#fff;font-size:clamp(42px,5vw,66px);margin-top:14px}
-    .cta p{color:#d7cbc4;font-size:15px;max-width:650px}
-    .cta-side{position:relative;z-index:2;display:grid;gap:13px}
-    .contact-buttons{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
-    .contact-buttons .btn{width:100%;padding:12px 10px}
-    .contact-row{border-top:1px solid var(--darkline);padding-top:14px;color:#d3c8c0;font-size:13px}
-    .contact-row strong{display:block;color:#fff;margin-bottom:3px}
-    .contact-phone{font-family:var(--serif);font-size:24px;color:#fff;margin-top:2px}
-    @media(max-width:650px){.contact-buttons{grid-template-columns:1fr}}
+    .cta{background:var(--ink);color:#fff;border-radius:18px;padding:42px;display:grid;grid-template-columns:1.18fr .82fr;gap:34px;align-items:end;position:relative;overflow:hidden}
+    .cta:after{content:"ЕБ";position:absolute;right:-10px;top:-45px;font-family:var(--serif);font-size:245px;color:rgba(255,255,255,.024)}
+    .cta .kicker{color:#c9aa97}.cta h2{color:#fff;font-size:clamp(41px,4.8vw,64px);margin-top:12px}.cta p{font-size:14px;color:#d5c9c2;max-width:620px}
+    .contact{position:relative;z-index:2;display:grid;gap:10px}.contact-buttons{display:grid;grid-template-columns:repeat(3,1fr);gap:7px}.contact-buttons .btn{padding:11px 9px}
+    .contact-row{padding-top:13px;border-top:1px solid var(--line-dark);font-size:12px;color:#d0c3bb}.contact-row strong{display:block;color:#fff;margin-bottom:3px}.phone{font-family:var(--serif);font-size:23px;color:#fff}
 
-    footer{padding:44px 0 64px;color:#756e68}
-    .foot{display:grid;grid-template-columns:1fr 1fr;gap:30px;padding-top:23px;border-top:1px solid var(--line);font-size:12px}
-    .reveal{opacity:0;transform:translateY(14px);transition:.65s ease}
+    footer{padding:42px 0 63px;color:#766e68}.foot{display:grid;grid-template-columns:1fr 1fr;gap:30px;padding-top:22px;border-top:1px solid var(--line);font-size:11px}
+
+    .reveal{opacity:0;transform:translateY(20px);transition:opacity .68s cubic-bezier(.2,.7,.2,1),transform .68s cubic-bezier(.2,.7,.2,1);transition-delay:var(--delay,0ms)}
     .reveal.on{opacity:1;transform:none}
-
-    @media(max-width:1040px){
-      .pain-grid,.method-grid{grid-template-columns:repeat(2,1fr)}
-      .method-card:nth-child(2){border-right:0}
-      .method-card:nth-child(-n+2){border-bottom:1px solid var(--darkline)}
-      .price-grid{grid-template-columns:1fr 1fr}
-      .price-card.featured{transform:none}
-      .price-card:last-child{grid-column:1/-1}
-    }
-    @media(max-width:900px){
-      .navlinks{display:none}
-      .hero-grid,.section-head,.position-grid,.method-outcome,.diagnostic-grid,.not-do-grid,.about-grid,.faq,.cta{grid-template-columns:1fr}
-      .hero-card{min-height:520px}
-      .position-grid{gap:12px}
-      .about-photo{aspect-ratio:16/13}
-      .price-foot{grid-template-columns:1fr}
-      section{padding:72px 0}
-      .method{margin:0 8px}
-    }
-    @media(max-width:650px){
-      .wrap{width:min(100% - 22px,1180px)}
-      .navin{height:68px}
-      .brandname span{display:none}
-      .nav .btn{padding:10px 12px;font-size:11px}
-      .hero{padding:44px 0 46px}
-      h1{font-size:49px}
-      .microproof{grid-template-columns:1fr}
-      .microproof div{border-right:0;border-bottom:1px solid var(--line);margin:0;padding:13px 0}
-      .microproof div:last-child{border-bottom:0}
-      .pain-grid,.method-grid,.price-grid,.proof-grid,.about-grid-small{grid-template-columns:1fr}
-      .method-card{border-right:0!important;border-bottom:1px solid var(--darkline)!important}
-      .method-card:last-child{border-bottom:0!important}
-      .price-card:last-child{grid-column:auto}
-      .hero-card{min-height:470px}
-      .artifact,.diagnostic-copy,.not-do-card,.price-card{padding:24px}
-      .cta{padding:28px}
-      .foot{grid-template-columns:1fr}
-    }
-    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.reveal{opacity:1;transform:none}}
-  
-    /* Final polish */
-    html{scroll-padding-top:92px}
-    body{background-image:radial-gradient(rgba(58,43,34,.035) .7px,transparent .7px);background-size:8px 8px}
-    ::selection{background:#d9baa2;color:var(--brown)}
-    a,button,summary{-webkit-tap-highlight-color:transparent}
-    :focus-visible{outline:2px solid var(--accent);outline-offset:4px;border-radius:4px}
-    .skip-link{position:fixed;left:16px;top:-60px;z-index:1000;background:var(--brown);color:#fff;padding:10px 14px;border-radius:6px;transition:.2s}
-    .skip-link:focus{top:12px}
-    .scroll-progress{position:fixed;left:0;top:0;height:2px;width:100%;z-index:100;background:transparent;pointer-events:none}
-    .scroll-progress span{display:block;height:100%;background:var(--accent);transform:scaleX(0);transform-origin:left center;will-change:transform}
-    .nav{box-shadow:0 0 0 rgba(0,0,0,0)}
-    .nav.scrolled{box-shadow:0 10px 34px rgba(58,43,34,.055)}
-    .navlinks a{position:relative;padding:8px 0}
-    .navlinks a:after{content:"";position:absolute;left:0;right:100%;bottom:2px;height:1px;background:var(--accent);transition:right .25s ease}
-    .navlinks a:hover:after,.navlinks a.active:after{right:0}
-    .navlinks a.active{color:var(--brown)}
-
-    .hero .eyebrow,.hero h1,.hero-position,.hero .lead,.hero-actions,.microproof{opacity:0;animation:introUp .75s cubic-bezier(.2,.7,.2,1) forwards}
-    .hero .eyebrow{animation-delay:.05s}
-    .hero h1{animation-delay:.12s}
-    .hero-position{animation-delay:.2s}
-    .hero .lead{animation-delay:.27s}
-    .hero-actions{animation-delay:.34s}
-    .microproof{animation-delay:.42s}
-    .hero-card{opacity:0;transform:translateY(18px) scale(.985);animation:heroCardIn .95s .14s cubic-bezier(.2,.7,.2,1) forwards}
-    .hero-photo{transform:scale(1.035) translateY(var(--photo-shift,0px));transition:transform .18s linear;will-change:transform}
-    .seal{animation:sealFloat 5s ease-in-out infinite}
-    @keyframes introUp{to{opacity:1;transform:translateY(0)}from{opacity:0;transform:translateY(14px)}}
-    @keyframes heroCardIn{to{opacity:1;transform:translateY(0) scale(1)}}
-    @keyframes sealFloat{50%{transform:translateY(-5px)}}
-
-    .quick-fit{padding:40px 0 88px}
-    .fit-panel{display:grid;grid-template-columns:.74fr 1.26fr;gap:42px;background:var(--card);border:1px solid var(--line);border-radius:16px;padding:34px;box-shadow:0 14px 40px rgba(63,45,34,.055)}
-    .fit-intro h2{font-size:clamp(36px,4vw,54px);margin-top:14px}
-    .fit-intro p{font-size:14px;color:#716a64;max-width:420px;margin:17px 0 0}
-    .fit-list{display:grid;grid-template-columns:1fr 1fr;gap:0 26px}
-    .fit-item{display:grid;grid-template-columns:30px 1fr;gap:11px;padding:16px 0;border-top:1px solid var(--line)}
-    .fit-item:nth-child(-n+2){border-top:0;padding-top:0}
-    .fit-item i{font-style:normal;width:24px;height:24px;border:1px solid rgba(169,111,72,.4);border-radius:50%;display:grid;place-items:center;color:var(--accent);font-size:12px}
-    .fit-item strong{display:block;font-family:var(--serif);font-weight:400;font-size:20px;color:var(--brown);margin-bottom:3px}
-    .fit-item span{font-size:13px;color:#746d67}
-
-    .reveal{opacity:0;transform:translateY(22px);transition:opacity .7s cubic-bezier(.2,.7,.2,1),transform .7s cubic-bezier(.2,.7,.2,1);transition-delay:var(--delay,0ms)}
-    .reveal.on{opacity:1;transform:none}
-    .pain-card,.method-card,.price-card,.proof-card,.artifact,.diagnostic-copy,.not-do-card{will-change:transform}
-    .pain-card:hover,.price-card:not(.featured):hover{transform:translateY(-5px);box-shadow:0 24px 60px rgba(63,45,34,.11)}
-    .method-card{transition:background .25s ease}
-    .method-card:hover{background:rgba(255,255,255,.035)}
-    .method-card .num{transition:transform .3s ease,color .3s ease}
-    .method-card:hover .num{transform:translateY(-4px);color:#e0ab86}
-    .artifact{transform:rotate(-.35deg)}
-    .artifact.on{transform:rotate(-.35deg) translateY(0)}
-    .about-photo{transition:transform .7s cubic-bezier(.2,.7,.2,1)}
-    .about-photo-wrap:hover .about-photo{transform:scale(1.012)}
-    .price-card.featured{box-shadow:0 30px 70px rgba(58,43,34,.18)}
-    details{transition:background .2s ease}
-    details[open]{background:rgba(255,250,244,.45)}
-    details summary{padding-left:4px}
-    details p{animation:faqIn .28s ease}
-    @keyframes faqIn{from{opacity:0;transform:translateY(-5px)}to{opacity:1;transform:none}}
-
-    .proof-note.production{display:grid;grid-template-columns:26px 1fr;gap:11px;align-items:start}
-    .proof-note.production:before{content:"§";font-family:var(--serif);font-size:23px;color:var(--accent)}
+    .hero .eyebrow,.hero h1,.hero-sub,.hero-copy,.hero-actions,.hero-proof{opacity:0;animation:intro .7s cubic-bezier(.2,.7,.2,1) forwards}
+    .hero .eyebrow{animation-delay:.04s}.hero h1{animation-delay:.11s}.hero-sub{animation-delay:.19s}.hero-copy{animation-delay:.26s}.hero-actions{animation-delay:.33s}.hero-proof{animation-delay:.4s}
+    .portrait{opacity:0;transform:translateY(16px) scale(.99);animation:portraitIn .9s .14s cubic-bezier(.2,.7,.2,1) forwards}
+    @keyframes intro{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
+    @keyframes portraitIn{to{opacity:1;transform:none}}
 
     .mobile-dock{display:none}
-    .contact-buttons .btn,.mobile-dock a{transition:transform .2s ease,background .2s ease,border-color .2s ease}
-    .contact-buttons .btn:hover{transform:translateY(-2px)}
-    .phone-inline{white-space:nowrap}
-
+    @media(max-width:1040px){
+      .steps{grid-template-columns:1fr 1fr}.step:nth-child(2){border-right:0}.step:nth-child(-n+2){border-bottom:1px solid var(--line-dark)}
+      .prices{grid-template-columns:1fr 1fr}.price:last-child{grid-column:1/-1}.price.featured{transform:none}
+    }
     @media(max-width:900px){
-      .fit-panel{grid-template-columns:1fr;gap:26px}
-      .fit-list{grid-template-columns:1fr}
-      .fit-item:nth-child(2){border-top:1px solid var(--line);padding-top:16px}
+      .links{display:none}
+      .hero-grid,.quote-grid,.section-head,.fit-grid,.method-result,.deliverable-grid,.about-grid,.check-shell,.faq,.cta{grid-template-columns:1fr}
+      .hero-grid{gap:28px}.portrait{min-height:530px}.quote-grid{gap:9px}.fit-lead{min-height:260px}.method{margin:0 8px}.about-photo img{aspect-ratio:16/13}
+      section{padding:72px 0}.check-intro{min-height:auto;gap:36px}.check-main{min-height:500px}
     }
     @media(max-width:650px){
-      body{padding-bottom:76px}
-      .quick-fit{padding:22px 0 64px}
-      .fit-panel{padding:24px}
-      .fit-list{grid-template-columns:1fr}
-      .hero-card{border-radius:14px}
-      .hero-card-copy h3{font-size:31px}
-      .position-grid{padding:24px 0}
-      .mobile-dock{display:grid;grid-template-columns:repeat(3,1fr);gap:7px;position:fixed;z-index:90;left:10px;right:10px;bottom:calc(10px + env(safe-area-inset-bottom));padding:8px;background:rgba(246,240,231,.92);backdrop-filter:blur(18px);border:1px solid var(--line);border-radius:14px;box-shadow:0 14px 36px rgba(58,43,34,.16)}
-      .mobile-dock a{display:flex;align-items:center;justify-content:center;min-height:46px;border:1px solid var(--brown);border-radius:9px;font-size:12px;font-weight:800}
-      .mobile-dock .wa{background:var(--brown);color:#fff}
+      body{padding-bottom:75px}.wrap{width:min(100% - 22px,1180px)}.navin{height:67px}.brandtext span{display:none}.nav .btn{padding:10px 11px;font-size:10px}
+      .hero{padding:42px 0 42px}h1{font-size:49px}.hero-proof{grid-template-columns:1fr}.hero-proof div{border-right:0;border-bottom:1px solid var(--line);margin:0;padding:12px 0}.hero-proof div:last-child{border-bottom:0}
+      .portrait{min-height:475px}.portrait-note{left:22px;right:22px;bottom:22px}.portrait-top{padding:22px}.seal{width:66px;height:66px;font-size:23px}
+      .fit-cards,.steps,.prices,.about-mini,.price-notes{grid-template-columns:1fr}.fit-card{min-height:auto}.step{border-right:0!important;border-bottom:1px solid var(--line-dark)!important}.step:last-child{border-bottom:0!important}.price:last-child{grid-column:auto}
+      .paper-card,.value-card,.check-intro,.check-main,.price{padding:24px}.check-main{min-height:520px}.contact-buttons{grid-template-columns:1fr}.cta{padding:27px}.foot{grid-template-columns:1fr}
+      .mobile-dock{display:grid;grid-template-columns:1fr 1.15fr;gap:7px;position:fixed;z-index:110;left:9px;right:9px;bottom:calc(9px + env(safe-area-inset-bottom));padding:7px;background:rgba(246,241,235,.93);backdrop-filter:blur(18px);border:1px solid var(--line);border-radius:14px;box-shadow:0 16px 38px rgba(47,36,31,.16)}
+      .mobile-dock a{min-height:46px;border:1px solid var(--ink);border-radius:9px;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:800}.mobile-dock .wa{background:var(--ink);color:#fff}
     }
     @media(prefers-reduced-motion:reduce){
-      .hero .eyebrow,.hero h1,.hero-position,.hero .lead,.hero-actions,.microproof,.hero-card{opacity:1;animation:none;transform:none}
-      .hero-photo,.seal{animation:none!important;transform:none!important}
-      .reveal{opacity:1;transform:none;transition:none}
+      html{scroll-behavior:auto}.reveal,.hero .eyebrow,.hero h1,.hero-sub,.hero-copy,.hero-actions,.hero-proof,.portrait{opacity:1;transform:none;animation:none;transition:none}.portrait img{transform:none!important}
     }
-
-  
-    /* 2026 trend pass: proprietary editorial system + TL;DR + personalized intake */
-    :root{
-      --clay:#c98d72;
-      --rose:#c79a91;
-      --sage:#8f9a83;
-      --sand:#d9c3aa;
-      --wine:#70453f;
-    }
-
-    .marker{position:relative;display:inline-block;z-index:0}
-    .marker:after{
-      content:"";position:absolute;left:-.02em;right:-.04em;bottom:.03em;height:.22em;
-      background:linear-gradient(90deg,rgba(201,141,114,.48),rgba(199,154,145,.28));
-      border-radius:999px;z-index:-1;transform:scaleX(0);transform-origin:left center;
-      animation:markerDraw .8s .82s cubic-bezier(.2,.75,.2,1) forwards
-    }
-    @keyframes markerDraw{to{transform:scaleX(1)}}
-
-    .case-chip{
-      position:absolute;z-index:4;left:28px;top:92px;
-      display:flex;align-items:center;gap:10px;padding:10px 13px;
-      background:rgba(246,240,231,.76);backdrop-filter:blur(14px);
-      border:1px solid rgba(255,255,255,.5);border-radius:999px;
-      color:var(--brown);font-size:10px;text-transform:uppercase;letter-spacing:.13em;
-      box-shadow:0 10px 30px rgba(58,43,34,.12)
-    }
-    .case-chip i{width:7px;height:7px;border-radius:50%;background:var(--clay);box-shadow:0 0 0 4px rgba(201,141,114,.16)}
-    .case-chip span{font-style:normal}
-
-    .fit-panel{
-      grid-template-columns:.62fr 1.38fr;
-      background:transparent;border:0;padding:0;box-shadow:none
-    }
-    .fit-intro{
-      background:var(--brown);color:#fff;border-radius:18px;padding:30px;min-height:100%;
-      display:flex;flex-direction:column;justify-content:flex-end
-    }
-    .fit-intro .kicker{color:#d9bdab}
-    .fit-intro h2{color:#fff;font-size:clamp(34px,4vw,52px)}
-    .fit-intro p{color:#d9cec6}
-    .fit-list{gap:12px}
-    .fit-item{
-      border:0!important;border-radius:16px;padding:22px!important;
-      grid-template-columns:34px 1fr;align-content:start;min-height:154px;
-      transition:transform .25s ease,box-shadow .25s ease
-    }
-    .fit-item:nth-child(1){background:#eee0d4}
-    .fit-item:nth-child(2){background:#e2e5da}
-    .fit-item:nth-child(3){background:#eadeda}
-    .fit-item:nth-child(4){background:#eee6da}
-    .fit-item:hover{transform:translateY(-4px);box-shadow:0 20px 45px rgba(58,43,34,.09)}
-    .fit-item i{background:rgba(255,255,255,.45);border-color:rgba(58,43,34,.16);color:var(--brown)}
-    .fit-item strong{font-size:21px}
-    .fit-item span{line-height:1.45}
-    .tldr-badge{
-      display:inline-flex;align-items:center;gap:8px;width:max-content;
-      padding:8px 11px;border:1px solid rgba(255,255,255,.2);border-radius:999px;
-      font-size:9px;text-transform:uppercase;letter-spacing:.18em;color:#ead9cd;margin-bottom:auto
-    }
-    .tldr-badge:before{content:"↘";font-size:12px}
-
-    .method-card:nth-child(1) .num{color:var(--clay)}
-    .method-card:nth-child(2) .num{color:#b9c1aa}
-    .method-card:nth-child(3) .num{color:#d0a7a0}
-    .method-card:nth-child(4) .num{color:#d5bd9f}
-
-    .selfcheck{padding:100px 0;background:linear-gradient(180deg,var(--paper) 0%,#efe4d8 100%)}
-    .check-shell{
-      display:grid;grid-template-columns:.72fr 1.28fr;gap:0;
-      background:var(--brown);border-radius:20px;overflow:hidden;box-shadow:0 28px 80px rgba(58,43,34,.14)
-    }
-    .check-aside{
-      padding:34px;color:#fff;display:flex;flex-direction:column;justify-content:space-between;
-      min-height:510px;background:
-        radial-gradient(circle at 22% 15%,rgba(201,141,114,.26),transparent 30%),
-        radial-gradient(circle at 90% 88%,rgba(143,154,131,.16),transparent 35%),
-        var(--brown)
-    }
-    .check-aside .kicker{color:#d8bba8}
-    .check-aside h3{font-family:var(--serif);font-weight:400;font-size:clamp(35px,4vw,53px);line-height:1.02;margin:14px 0 17px}
-    .check-aside p{color:#d8cbc3;font-size:14px;max-width:390px}
-    .check-privacy{font-size:11px;color:#bbaea6;padding-top:20px;border-top:1px solid var(--darkline)}
-    .check-main{background:var(--card);padding:34px;min-height:510px;display:flex;flex-direction:column}
-    .check-meta{display:flex;justify-content:space-between;gap:18px;align-items:center;margin-bottom:34px}
-    .check-step{font-size:11px;text-transform:uppercase;letter-spacing:.16em;color:#837970}
-    .check-track{flex:1;height:3px;background:#e5d9cd;border-radius:99px;overflow:hidden}
-    .check-track span{display:block;width:33.333%;height:100%;background:linear-gradient(90deg,var(--clay),var(--sage));transition:width .35s ease}
-    .check-question{display:none;animation:questionIn .36s ease}
-    .check-question.active{display:block}
-    @keyframes questionIn{from{opacity:0;transform:translateY(7px)}to{opacity:1;transform:none}}
-    .check-question h3,.check-result h3{font-family:var(--serif);font-size:clamp(29px,3vw,41px);line-height:1.08;font-weight:400;color:var(--brown);margin-bottom:10px}
-    .check-question>p{color:#766e68;font-size:14px;margin-bottom:25px}
-    .check-options{display:grid;gap:10px}
-    .check-option{
-      appearance:none;width:100%;text-align:left;border:1px solid var(--line);background:#fffaf4;
-      border-radius:12px;padding:16px 18px;color:var(--brown);cursor:pointer;
-      display:flex;justify-content:space-between;gap:16px;align-items:center;
-      font:600 14px var(--sans);transition:.2s ease
-    }
-    .check-option:after{content:"→";font-family:var(--serif);font-size:20px;color:var(--accent)}
-    .check-option:hover,.check-option.selected{background:#eee2d7;border-color:rgba(112,69,63,.35);transform:translateX(3px)}
-    .check-hint{margin-top:auto;padding-top:24px;font-size:11px;color:#898078}
-    .check-result{display:none;animation:questionIn .4s ease}
-    .check-result.active{display:flex;flex-direction:column;height:100%}
-    .result-badge{display:inline-flex;width:max-content;padding:7px 10px;border-radius:999px;background:#e1e5da;color:#54604d;font-size:9px;text-transform:uppercase;letter-spacing:.16em;margin-bottom:20px}
-    .prep-list{list-style:none;padding:0;margin:16px 0 22px;display:grid;gap:0}
-    .prep-list li{padding:10px 0;border-top:1px solid var(--line);font-size:13px;color:#625c57}
-    .prep-list li:before{content:"✓";color:var(--sage);font-weight:900;margin-right:10px}
-    .result-actions{display:flex;flex-wrap:wrap;gap:9px;margin-top:auto}
-    .result-note{font-size:11px;color:#837a73;margin:0 0 20px}
-    .text-btn{border:0;background:transparent;color:#766b64;text-decoration:underline;text-underline-offset:4px;cursor:pointer;padding:10px 2px;font:600 12px var(--sans)}
-
-    .section-orbit{
-      display:inline-flex;align-items:center;gap:9px;margin-top:18px;color:#82776f;font-size:10px;text-transform:uppercase;letter-spacing:.16em
-    }
-    .section-orbit:before{content:"";width:34px;height:1px;background:currentColor}
-
-    @supports (animation-timeline:view()){
-      .section-head h2{
-        animation:headlineFade linear both;
-        animation-timeline:view();
-        animation-range:entry 10% cover 32%
-      }
-      @keyframes headlineFade{
-        from{opacity:.35;transform:translateY(10px)}
-        to{opacity:1;transform:none}
-      }
-    }
-
-    @media(max-width:900px){
-      .check-shell{grid-template-columns:1fr}
-      .check-aside{min-height:auto;gap:42px}
-      .check-main{min-height:500px}
-      .fit-panel{grid-template-columns:1fr}
-    }
-    @media(max-width:650px){
-      .case-chip{left:20px;top:76px}
-      .fit-intro{padding:24px}
-      .fit-item{min-height:auto}
-      .selfcheck{padding:72px 0}
-      .check-aside,.check-main{padding:25px}
-      .check-main{min-height:520px}
-      .result-actions{display:grid}
-      .result-actions .btn,.result-actions .text-btn{width:100%}
-    }
-    @media(prefers-reduced-motion:reduce){
-      .marker:after{animation:none;transform:scaleX(1)}
-      .check-question,.check-result{animation:none}
-    }
-
-  
-    /* Final acceptance pass */
-    section{padding-block:clamp(72px,8vw,104px)}
-    .hero{padding-top:clamp(46px,6vw,72px)}
-    .hero-position{max-width:690px}
-    .lead{max-width:650px}
-    .section-copy{max-width:690px}
-    .pain-card,.price-card,.diagnostic-copy,.artifact{border-color:rgba(58,43,34,.12)}
-    .pain-card{background:rgba(255,250,244,.82)}
-    .proof-card p,.pain-card p,.price-card>p,.value-item,.not-do-item p{line-height:1.58}
-    .cta{box-shadow:0 30px 80px rgba(58,43,34,.14)}
-    .contact-phone{display:inline-block}
-    @media(max-width:650px){
-      h1{font-size:clamp(45px,13vw,58px);line-height:.96}
-      .hero-position{font-size:22px}
-      .lead{font-size:15px}
-      .hero-card{min-height:510px}
-      .hero-photo{object-position:center 24%}
-      .case-chip{font-size:8px;letter-spacing:.11em;padding:8px 10px}
-      .mobile-dock a{font-size:10px;padding-inline:5px}
-      .mobile-dock .wa{background:var(--brown);color:#fff}
-      .contact-buttons{grid-template-columns:1fr 1fr}
-      .contact-buttons .btn:first-child{grid-column:1/-1}
-    }
-
   </style>
-  <script type="application/ld+json">
-  {
-    "@context":"https://schema.org",
-    "@type":"LegalService",
-    "name":"Елена Баклыкова — юрист по банкротству физических лиц",
-    "url":"https://mynameisnastasya.github.io/elenabaklykova/",
-    "image":"https://mynameisnastasya.github.io/elenabaklykova/assets/elena-main.webp",
-    "telephone":"+79043770075",
-    "description":"Юридическая помощь по вопросам банкротства физических лиц: предварительная оценка рисков, правовой анализ, подготовка документов и сопровождение процедуры.",
-    "priceRange":"₽₽"
-  }
-  </script>
 </head>
 <body>
-  <a class="skip-link" href="#main">К содержанию</a>
-  <div class="scroll-progress" aria-hidden="true"><span id="scrollProgress"></span></div>
+  <a class="skip" href="#main">К содержанию</a>
+  <div class="progress" aria-hidden="true"><span id="progress"></span></div>
+
   <nav class="nav" id="nav">
     <div class="wrap navin">
-      <a class="brand" href="#top">
-        <span class="mark">ЕБ</span>
-        <span class="brandname"><strong>Елена Баклыкова</strong><span>Юрист по банкротству физических лиц</span></span>
+      <a class="brand" href="#top" aria-label="Елена Баклыкова — на главную">
+        <span class="monogram">ЕБ</span>
+        <span class="brandtext"><strong>Елена Баклыкова</strong><span>банкротство физических лиц</span></span>
       </a>
-      <div class="navlinks">
-        <a href="#tldr">Коротко</a>
-        <a href="#method">Метод</a>
-        <a href="#diagnostic">Диагностика</a>
+      <div class="links">
+        <a href="#method">Подход</a>
+        <a href="#result">Что получите</a>
         <a href="#about">О юристе</a>
         <a href="#prices">Стоимость</a>
-        <a href="#faq">Вопросы</a>
+        <a href="#check">Проверка</a>
       </div>
-      <a class="btn dark" href="#contact">Разобрать ситуацию</a>
+      <a class="btn dark" href="https://wa.me/79043770075?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5%2C%20%D1%85%D0%BE%D1%87%D1%83%20%D0%BF%D0%B5%D1%80%D0%B2%D0%B8%D1%87%D0%BD%D1%8B%D0%B9%20%D1%80%D0%B0%D0%B7%D0%B1%D0%BE%D1%80." target="_blank" rel="noopener">Написать</a>
     </div>
   </nav>
 
-  <main id="main"><div id="top"></div>
+  <main id="main">
+    <div id="top"></div>
     <section class="hero">
       <div class="wrap hero-grid">
         <div>
-          <div class="eyebrow">Банкротство физических лиц · 127-ФЗ</div>
-          <h1>Сначала — <em class="marker">проверка рисков.</em><br>Потом — банкротство.</h1>
-          <p class="hero-position">Елена Баклыкова — юрист по банкротству физических лиц. Сначала разбираем факты и риски. Только потом решаем, нужна ли вам процедура.</p>
-          <p class="lead">На первом этапе становится понятно главное: какой правовой сценарий имеет смысл, что может создать проблему и какие действия нужны дальше.</p>
+          <div class="eyebrow">Юрист по банкротству · 127-ФЗ</div>
+          <h1>Сначала — <em>риски.</em><br>Потом — решение.</h1>
+          <p class="hero-sub">Помогаю понять, стоит ли вам вообще начинать банкротство — до подачи заявления, расходов и необратимых шагов.</p>
+          <p class="hero-copy">Проверяем долги, имущество, сделки и текущую ситуацию. В результате вы понимаете возможный маршрут, слабые места и следующий шаг — без обещаний «100% списания» до изучения документов.</p>
           <div class="hero-actions">
-            <a class="btn dark" href="https://wa.me/79043770075?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5%2C%20%D1%85%D0%BE%D1%87%D1%83%20%D0%BF%D0%BE%D0%BB%D1%83%D1%87%D0%B8%D1%82%D1%8C%20%D0%BF%D0%B5%D1%80%D0%B2%D0%B8%D1%87%D0%BD%D1%8B%D0%B9%20%D1%80%D0%B0%D0%B7%D0%B1%D0%BE%D1%80." target="_blank" rel="noopener">Написать в WhatsApp</a>
+            <a class="btn dark" href="https://wa.me/79043770075?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5%2C%20%D1%85%D0%BE%D1%87%D1%83%20%D0%BF%D0%B5%D1%80%D0%B2%D0%B8%D1%87%D0%BD%D1%8B%D0%B9%20%D1%80%D0%B0%D0%B7%D0%B1%D0%BE%D1%80." target="_blank" rel="noopener">Первичный разбор · 0 ₽</a>
             <a class="btn" href="#check">Проверить ситуацию за 60 сек</a>
           </div>
-          <div class="microproof">
+          <div class="hero-proof">
             <div><strong>0 ₽</strong><span>первичный разбор</span></div>
-            <div><strong>4 зоны риска</strong><span>долги · имущество · сделки · маршрут</span></div>
-            <div><strong>По фактам</strong><span>без обещаний до анализа</span></div>
+            <div><strong>4 проверки</strong><span>до решения о процедуре</span></div>
+            <div><strong>Прозрачно</strong><span>объём и стоимость до старта</span></div>
           </div>
         </div>
-        <aside class="hero-card">
-          <img class="hero-photo" src="assets/elena-main.webp" alt="Елена Баклыкова, юрист по банкротству физических лиц" fetchpriority="high" decoding="async">
-          <div class="case-chip" aria-hidden="true"><i></i><span>Риски → решение → действия</span></div>
-          <div class="hero-top">
-            <span class="hero-label">Частная юридическая практика</span>
-            <span class="seal">ЕБ</span>
+
+        <div class="portrait" aria-label="Елена Баклыкова">
+          <img src="assets/elena-main.webp" alt="Елена Баклыкова, юрист по банкротству физических лиц" fetchpriority="high" decoding="async">
+          <div class="portrait-top"><span>частная юридическая практика</span><span class="seal">ЕБ</span></div>
+          <div class="portrait-note">
+            <span class="dot"></span>
+            <div><h3>Елена Баклыкова</h3><p>«Моя задача — не продать процедуру, а снизить неопределённость до того, как вы примете решение».</p></div>
           </div>
-          <div class="hero-card-copy">
-            <div class="law">Банкротство физических лиц</div>
-            <h3>Елена Баклыкова</h3>
-            <p>Моя задача — не уговорить вас на процедуру, а снизить юридическую неопределённость до того, как вы примете решение.</p>
-          </div>
-        </aside>
+        </div>
       </div>
     </section>
 
-    <div class="position-strip">
-      <div class="wrap position-grid">
-        <div class="label">Коротко о подходе</div>
-        <div class="phrase">Если после анализа банкротство вам не подходит — <em>я скажу об этом до старта.</em></div>
+    <div class="quote-strip">
+      <div class="wrap quote-grid">
+        <div class="label">Профессиональная позиция</div>
+        <div class="statement">Если после анализа банкротство вам не подходит — <em>вы узнаете об этом до старта.</em></div>
       </div>
     </div>
 
-    <section class="quick-fit" id="tldr" aria-labelledby="fit-title">
-      <div class="wrap">
-        <div class="fit-panel reveal">
-          <div class="fit-intro">
-            <div class="tldr-badge">Коротко · 30 секунд</div><div class="kicker">Быстрый самоотбор</div>
-            <h2 id="fit-title">Мой подход вам подходит, если нужна <em>не продажа процедуры</em></h2>
-            <p>А спокойный разбор, после которого понятно, что делать дальше — даже если ответ окажется «не банкротиться сейчас».</p>
-          </div>
-          <div class="fit-list">
-            <div class="fit-item"><i>✓</i><div><strong>Нужен прямой ответ</strong><span>Подходит ли банкротство именно вам и почему.</span></div></div>
-            <div class="fit-item"><i>✓</i><div><strong>Есть имущество или сделки</strong><span>И вы хотите увидеть риски до подачи документов.</span></div></div>
-            <div class="fit-item"><i>✓</i><div><strong>Не верите рекламе «спишем всё»</strong><span>И хотите принимать решение по фактам, а не по обещаниям.</span></div></div>
-            <div class="fit-item"><i>✓</i><div><strong>Важно понимать процесс</strong><span>Стоимость, этапы, последствия и свою роль заранее.</span></div></div>
-          </div>
+    <section class="fit">
+      <div class="wrap fit-grid">
+        <div class="fit-lead reveal">
+          <div class="pill">за 30 секунд</div>
+          <h3>Мой подход вам подходит, если нужна ясность, а не давление.</h3>
+          <p>Банкротство — серьёзное решение. Хорошая консультация должна помогать принять его осознанно.</p>
         </div>
-      </div>
-    </section>
-
-    <section id="situations">
-      <div class="wrap">
-        <div class="section-head reveal">
-          <div class="kicker">Когда ко мне обращаются</div>
-          <div>
-            <h2>Когда вам нужен не рекламный ответ, а <em>ясность</em></h2>
-            <p class="section-copy">Юридическая помощь ценна там, где она помогает быстрее принять решение, избежать ошибки и увидеть то, что легко пропустить без правовой оценки.</p>
-          </div>
-        </div>
-        <div class="pain-grid">
-          <article class="pain-card reveal"><div class="n">1</div><h3>Платежи больше не сходятся с доходом</h3><p>Нужно понять, какие законные варианты есть кроме бесконечного перекредитования и ожидания просрочек.</p></article>
-          <article class="pain-card reveal"><div class="n">2</div><h3>Приставы уже взыскивают деньги</h3><p>Важно разобраться, что происходит сейчас и как выбранный сценарий повлияет на исполнительные производства.</p></article>
-          <article class="pain-card reveal"><div class="n">3</div><h3>Есть квартира, автомобиль или доли</h3><p>До заявления нужно отдельно проверить статус имущества и возможные последствия для него.</p></article>
-          <article class="pain-card reveal"><div class="n">4</div><h3>Были сделки и переводы имущества</h3><p>Такие обстоятельства нельзя замалчивать: их нужно заранее оценить с точки зрения рисков процедуры.</p></article>
+        <div class="fit-cards">
+          <div class="fit-card reveal"><b>Платить становится тяжело</b><span>Нужно понять варианты до того, как ситуация станет ещё дороже.</span></div>
+          <div class="fit-card reveal"><b>Есть приставы или удержания</b><span>Важно увидеть, как текущая стадия взыскания влияет на дальнейший маршрут.</span></div>
+          <div class="fit-card reveal"><b>Есть имущество</b><span>Жильё, автомобиль, доли и совместная собственность требуют оценки до подачи.</span></div>
+          <div class="fit-card reveal"><b>Были сделки</b><span>Продажи, дарение и переоформления лучше разобрать заранее, а не уже в споре.</span></div>
         </div>
       </div>
     </section>
@@ -630,237 +355,136 @@
     <section class="method" id="method">
       <div class="wrap">
         <div class="section-head reveal">
-          <div class="kicker">Механизм работы</div>
-          <div>
-            <h2>Четыре проверки <em>до подачи</em></h2>
-            <p class="section-copy">Не начинаем с заявления. Сначала собираем картину и только потом выбираем правовой маршрут.</p>
-          </div>
+          <div class="kicker">Подход к делу</div>
+          <div><h2>Четыре проверки <em>до подачи</em></h2><p class="section-copy">Сначала собираем картину. Потом решаем, нужна ли процедура и какой маршрут имеет смысл.</p></div>
         </div>
-        <div class="method-grid">
-          <article class="method-card reveal"><div class="num">01</div><h3>Долги</h3><p>Состав обязательств, кредиторы, просрочки, исполнительные производства и обстоятельства, которые могут влиять на освобождение от долгов.</p></article>
-          <article class="method-card reveal"><div class="num">02</div><h3>Имущество</h3><p>Жильё, автомобиль, доли, совместная собственность, залог и другие активы, которые важно оценить заранее.</p></article>
-          <article class="method-card reveal"><div class="num">03</div><h3>Сделки</h3><p>Продажи, дарение, переводы и иные действия за предшествующий период — как возможные зоны правового риска.</p></article>
-          <article class="method-card reveal"><div class="num">04</div><h3>Маршрут</h3><p>Судебное или внесудебное банкротство, альтернатива процедуре, порядок действий, бюджет и следующий шаг.</p></article>
+        <div class="steps">
+          <article class="step reveal"><div class="step-num">01</div><h3>Долги</h3><p>Состав обязательств, кредиторы, просрочки, исполнительные производства и особенности отдельных долгов.</p></article>
+          <article class="step reveal"><div class="step-num">02</div><h3>Имущество</h3><p>Жильё, автомобиль, доли, совместная собственность, залог и другие значимые активы.</p></article>
+          <article class="step reveal"><div class="step-num">03</div><h3>Сделки</h3><p>Продажи, дарение, переоформления и иные действия, которые могут иметь значение для процедуры.</p></article>
+          <article class="step reveal"><div class="step-num">04</div><h3>Маршрут</h3><p>Судебный, внесудебный или альтернативный сценарий, порядок действий и ориентир по расходам.</p></article>
         </div>
-        <div class="method-outcome reveal">
-          <strong>Результат — не «давайте подпишем договор».</strong>
-          <p>Результат — понятное решение: идти в процедуру сейчас, сначала устранить риски, рассмотреть другой законный вариант или не начинать банкротство вовсе.</p>
-        </div>
+        <div class="method-result reveal"><strong>Результат — не «подпишите договор».</strong><p>Результат — понятное решение: начинать процедуру, сначала устранить риски, рассмотреть другой вариант или пока не идти в банкротство.</p></div>
       </div>
     </section>
 
-    <section id="diagnostic">
+    <section id="result">
       <div class="wrap">
         <div class="section-head reveal">
-          <div class="kicker">Продукт экспертизы</div>
-          <div>
-            <h2>Диагностика превращает тревогу в <em>карту решений</em></h2>
-            <p class="section-copy">Вместо абстрактной «консультации» вы получаете конкретную структуру, по которой можно принимать решение и двигаться дальше.</p>
-          </div>
+          <div class="kicker">Что вы получите</div>
+          <div><h2>Не просто консультацию. <em>Карту решений.</em></h2><p class="section-copy">После диагностики должно быть понятно не только «можно или нельзя», но и почему, где находятся риски и что делать дальше.</p></div>
         </div>
-        <div class="diagnostic-grid">
-          <div class="artifact reveal">
-            <div class="art-kicker">Что вы должны понять после диагностики</div>
+        <div class="deliverable-grid">
+          <div class="paper-card reveal">
+            <div class="tiny">Результат диагностики</div>
             <h3>Карта рисков и действий</h3>
-            <div class="artifact-row"><b>01</b><span><strong>Подходит ли банкротство</strong> — и почему именно в вашей ситуации.</span></div>
-            <div class="artifact-row"><b>02</b><span><strong>Какие зоны риска есть</strong> — имущество, сделки, отдельные обязательства, процессуальные обстоятельства.</span></div>
-            <div class="artifact-row"><b>03</b><span><strong>Какой маршрут выбрать</strong> — судебный, внесудебный или альтернативный сценарий.</span></div>
-            <div class="artifact-row"><b>04</b><span><strong>Что делать дальше</strong> — документы, последовательность шагов и ориентир по расходам.</span></div>
+            <div class="paper-row"><b>01</b><span><strong>Подходит ли банкротство</strong> — и на каких фактах основан вывод.</span></div>
+            <div class="paper-row"><b>02</b><span><strong>Где риски</strong> — имущество, сделки, обязательства и другие обстоятельства.</span></div>
+            <div class="paper-row"><b>03</b><span><strong>Какой маршрут</strong> — судебный, внесудебный или иной законный сценарий.</span></div>
+            <div class="paper-row"><b>04</b><span><strong>Что дальше</strong> — документы, последовательность действий и ориентир по расходам.</span></div>
           </div>
-          <div class="diagnostic-copy reveal">
-            <div class="kicker">За что вы платите</div>
-            <h3>Не за количество звонков и документов. За снижение неопределённости.</h3>
+          <div class="value-card reveal">
+            <div class="kicker">Ценность работы</div>
+            <h3>Снизить неопределённость до того, как она станет дорогой ошибкой.</h3>
             <div class="value-list">
-              <div class="value-item"><i>→</i><span>быстрее понять, какой сценарий вообще имеет смысл;</span></div>
-              <div class="value-item"><i>→</i><span>увидеть юридические риски до того, как они превратятся в проблему;</span></div>
-              <div class="value-item"><i>→</i><span>не подавать документы вслепую и не строить решение на рекламных обещаниях;</span></div>
-              <div class="value-item"><i>→</i><span>понимать бюджет, последовательность действий и свою роль в процедуре;</span></div>
-              <div class="value-item"><i>→</i><span>получить прямой ответ, если банкротство в текущей конфигурации не подходит.</span></div>
+              <div><i>→</i><span>быстрее понять, какой сценарий действительно имеет смысл;</span></div>
+              <div><i>→</i><span>увидеть риски до подачи документов;</span></div>
+              <div><i>→</i><span>не строить решение на рекламных обещаниях;</span></div>
+              <div><i>→</i><span>знать бюджет, порядок действий и свою роль;</span></div>
+              <div><i>→</i><span>получить прямой ответ, если банкротство сейчас не подходит.</span></div>
             </div>
           </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="not-do">
-      <div class="wrap not-do-grid">
-        <div class="not-do-card reveal">
-          <div class="kicker" style="color:#d6b9a3">Профессиональная позиция</div>
-          <div class="big">Иногда сильный юридический совет звучит: «не делайте этого сейчас».</div>
-          <p>Чем серьёзнее решение, тем важнее способность юриста исключить лишние действия, сохранить ресурс и не вести клиента в процедуру только потому, что её можно продать.</p>
-        </div>
-        <div class="not-do-list reveal">
-          <div class="not-do-item"><span>01</span><div><strong>Если риск выше пользы</strong><p>Сначала обсуждаем слабые места и возможные последствия, а не начинаем оформление «по шаблону».</p></div></div>
-          <div class="not-do-item"><span>02</span><div><strong>Если есть более подходящий законный путь</strong><p>Банкротство — не единственный ответ на долговую проблему. Выбор зависит от исходных данных.</p></div></div>
-          <div class="not-do-item"><span>03</span><div><strong>Если не хватает данных для решения</strong><p>Сначала собираем документы и проверяем факты. Уверенность без оснований — плохая юридическая стратегия.</p></div></div>
         </div>
       </div>
     </section>
 
     <section class="about" id="about">
       <div class="wrap about-grid">
-        <div class="about-photo-wrap reveal">
-          <img class="about-photo" src="assets/elena-close.webp" alt="Портрет Елены Баклыковой" loading="lazy" decoding="async">
-        </div>
+        <div class="about-photo reveal"><img src="assets/elena-close.webp" alt="Портрет Елены Баклыковой" loading="lazy" decoding="async"></div>
         <div class="about-copy reveal">
           <div class="kicker">О специалисте</div>
-          <h2>Юрист, который начинает <em>с вопроса «что может пойти не так?»</em></h2>
-          <p>Елена Баклыкова работает с вопросами банкротства физических лиц и долговой нагрузки. В центре работы — предварительная оценка рисков, понятная правовая логика и сопровождение без давления на клиента.</p>
-          <div class="about-principle">Мой принцип: <em>не обещать результат до анализа обстоятельств дела.</em></div>
-          <div class="about-grid-small">
-            <div><strong>Позиция</strong>Сначала факты и риски — потом решение.</div>
-            <div><strong>Коммуникация</strong>Без лишнего канцелярита и давления.</div>
-            <div><strong>Продукт</strong>Диагностика, понятный маршрут, сопровождение.</div>
-            <div><strong>Результат работы</strong>Понимание рисков, маршрута и следующего шага.</div>
+          <h2>Сначала понять, <em>что может пойти не так.</em></h2>
+          <p>Елена Баклыкова работает с вопросами банкротства физических лиц и долговой нагрузки. В центре работы — предварительная оценка рисков, понятная правовая логика и последовательное сопровождение без давления на клиента.</p>
+          <div class="principle">Принцип работы: <em>не обещать результат до анализа обстоятельств дела.</em></div>
+          <div class="about-mini">
+            <div><strong>Без давления</strong>Решение принимается после разбора фактов.</div>
+            <div><strong>На понятном языке</strong>Без лишнего канцелярита и тумана.</div>
+            <div><strong>С прозрачной ценой</strong>Объём работ определяется до старта.</div>
+            <div><strong>С конкретным результатом</strong>Риски, маршрут и следующий шаг.</div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="pricing" id="prices">
+    <section id="prices">
       <div class="wrap">
         <div class="section-head reveal">
           <div class="kicker">Стоимость</div>
-          <div>
-            <h2>Три понятных <em>уровня помощи</em></h2>
-            <p class="section-copy">Цена связана с глубиной задачи: от первичного фильтра до полного сопровождения. Итоговый объём и стоимость фиксируются до начала работ.</p>
-          </div>
+          <div><h2>Три уровня <em>помощи</em></h2><p class="section-copy">Цена связана с глубиной задачи. Итоговый объём работ и стоимость фиксируются до начала сопровождения.</p></div>
         </div>
-
-        <div class="price-grid">
-          <article class="price-card reveal">
-            <div class="price-tag">Первый шаг</div>
-            <h3>Первичный разбор</h3>
-            <div class="amount">0 ₽</div>
-            <p>Коротко определяем, есть ли основания идти в глубокую диагностику и какие данные нужны дальше.</p>
-            <ul class="price-list">
-              <li>примерный состав долгов</li>
-              <li>имущество и доход</li>
-              <li>первичные стоп-факторы</li>
-            </ul>
-          </article>
-
-          <article class="price-card reveal">
-            <div class="price-tag">Диагностика</div>
-            <h3>Правовой анализ и карта действий</h3>
-            <div class="amount">4 900 ₽</div>
-            <p>Глубокий разбор документов и рисков перед решением о процедуре.</p>
-            <ul class="price-list">
-              <li>анализ документов и обстоятельств</li>
-              <li>карта рисков</li>
-              <li>варианты правового маршрута</li>
-              <li>план следующих действий</li>
-            </ul>
-          </article>
-
-          <article class="price-card featured reveal">
-            <div class="price-tag">Основная услуга</div>
-            <h3>Судебное банкротство «под ключ»</h3>
-            <div class="amount">от 89 000 ₽ <small>юридические услуги</small></div>
-            <p>Сопровождение дела в согласованном объёме — после диагностики и принятия решения о процедуре.</p>
-            <ul class="price-list">
-              <li>подготовка процессуальных документов</li>
-              <li>сопровождение по этапам дела</li>
-              <li>контроль согласованных действий и сроков</li>
-              <li>объяснение происходящего понятным языком</li>
-            </ul>
-          </article>
+        <div class="prices">
+          <article class="price reveal"><div class="price-tag">Первый шаг</div><h3>Первичный разбор</h3><div class="amount">0 ₽</div><p>Определяем, есть ли смысл идти в глубокую диагностику и какие данные нужны дальше.</p><ul><li>примерный состав долгов</li><li>имущество и доход</li><li>первичные стоп-факторы</li></ul></article>
+          <article class="price reveal"><div class="price-tag">Диагностика</div><h3>Правовой анализ и карта действий</h3><div class="amount">4 900 ₽</div><p>Глубокий разбор обстоятельств и рисков перед решением о процедуре.</p><ul><li>анализ документов</li><li>карта рисков</li><li>варианты маршрута</li><li>план следующих действий</li></ul></article>
+          <article class="price featured reveal"><div class="price-tag">Основная услуга</div><h3>Судебное банкротство «под ключ»</h3><div class="amount">от 89 000 ₽ <small>юридические услуги</small></div><p>Сопровождение дела после диагностики и принятия решения о процедуре.</p><ul><li>процессуальные документы</li><li>сопровождение по этапам</li><li>контроль согласованных действий</li><li>понятная коммуникация по делу</li></ul></article>
         </div>
-
-        <div class="price-foot reveal">
-          <div class="price-note"><strong>Отдельная услуга:</strong> подготовка заявления и комплекта документов — от 15 000 ₽, если полное сопровождение не требуется.</div>
-          <div class="price-note"><strong>Важно:</strong> обязательные и фактические расходы по делу не маскируются в рекламной цене и рассчитываются отдельно до старта. Итог зависит от выбранной процедуры и обстоятельств дела.</div>
+        <div class="price-notes reveal">
+          <div class="price-note"><strong>Отдельно:</strong> подготовка заявления и комплекта документов — от 15 000 ₽, если полное сопровождение не требуется.</div>
+          <div class="price-note"><strong>Важно:</strong> обязательные и фактические расходы по делу рассчитываются отдельно до старта. Итог зависит от процедуры и обстоятельств дела.</div>
         </div>
       </div>
     </section>
 
-    <section id="proof">
+    <section class="check" id="check">
       <div class="wrap">
         <div class="section-head reveal">
-          <div class="kicker">Доверие до договора</div>
-          <div>
-            <h2>Доказательства — это не обещания. Это <em>видимый способ работы.</em></h2>
-            <p class="section-copy">До договора можно оценить не обещания, а качество самой работы: насколько прозрачно объяснены риски, результат диагностики, объём услуги и границы ответственности.</p>
-          </div>
+          <div class="kicker">Первый шаг</div>
+          <div><h2>Проверка ситуации <em>за 60 секунд</em></h2><p class="section-copy">Три вопроса не заменяют юридический анализ. Они помогают подготовить первый разговор и сформировать сообщение Елене.</p></div>
         </div>
-        <div class="proof-grid">
-          <article class="proof-card reveal"><div class="label">01 / Прозрачность</div><h3>Понятный объём работ</h3><p>До старта должно быть ясно, что входит в услугу, где заканчивается ответственность юриста и что потребуется от клиента.</p></article>
-          <article class="proof-card reveal"><div class="label">02 / Решения</div><h3>Письменный маршрут после диагностики</h3><p>Не просто разговор, а структура: риски, варианты, последовательность действий и основания для выбора.</p></article>
-          <article class="proof-card reveal"><div class="label">03 / Позиция</div><h3>Нет обещаний «100% списания»</h3><p>Исход процедуры зависит от фактов и поведения участников дела. Юридическая уверенность должна опираться на документы.</p></article>
-        </div>
-        <div class="proof-note production reveal"><div>В юридической работе доверие начинается с точности формулировок: если обстоятельство нельзя подтвердить документами, оно не должно превращаться в рекламное обещание.</div></div>
-      </div>
-    </section>
-
-    <section class="selfcheck" id="check">
-      <div class="wrap">
-        <div class="section-head reveal">
-          <div>
-            <div class="kicker">Подготовка к первичному разбору</div>
-            <div class="section-orbit">Без отправки данных на сервер</div>
-          </div>
-          <div>
-            <h2>Подготовка к разбору <em>за 60 секунд</em></h2>
-            <p class="section-copy">Три вопроса помогут собрать исходные сведения и подготовить первое сообщение Елене. Юридических выводов сайт не делает.</p>
-          </div>
-        </div>
-
         <div class="check-shell reveal" id="selfCheck">
-          <div class="check-aside">
-            <div>
-              <div class="kicker">Подготовка</div>
-              <h3>Не анкета на двадцать полей.</h3>
-              <p>Вы выбираете три ответа. Сайт подсказывает, какие сведения пригодятся Елене для первого разговора, и собирает готовое сообщение для WhatsApp.</p>
-            </div>
-            <div class="check-privacy">Ответы обрабатываются только в вашем браузере и никуда не отправляются, пока вы сами не нажмёте кнопку WhatsApp.</div>
+          <div class="check-intro">
+            <div><div class="kicker" style="color:#cfb19f">Мини-диагностика</div><h3>Три вопроса. Без длинной анкеты.</h3><p>Ответьте на них — сайт соберёт короткий список того, что стоит подготовить, и сформирует сообщение для WhatsApp.</p></div>
+            <div class="privacy">Ответы остаются в вашем браузере и никуда не отправляются, пока вы сами не нажмёте кнопку WhatsApp.</div>
           </div>
-
           <div class="check-main">
-            <div class="check-meta">
-              <span class="check-step" id="checkStep">Вопрос 1 из 3</span>
-              <div class="check-track" aria-hidden="true"><span id="checkProgress"></span></div>
-            </div>
+            <div class="check-meta"><span class="check-step" id="checkStep">Вопрос 1 из 3</span><div class="track"><span id="checkProgress"></span></div></div>
 
-            <div class="check-question active" data-question="debt">
-              <h3>Что сейчас происходит с долгами?</h3>
-              <p>Выберите вариант, который ближе всего к вашей ситуации.</p>
-              <div class="check-options">
-                <button class="check-option" type="button" data-label="Платежи ещё вношу, но нагрузка стала тяжёлой">Плачу, но уже тяжело</button>
-                <button class="check-option" type="button" data-label="Есть просрочки по кредитам или займам">Есть просрочки</button>
-                <button class="check-option" type="button" data-label="Есть исполнительные производства или удержания приставов">Есть приставы / удержания</button>
+            <div class="question active" data-question="debt">
+              <h3>Что сейчас происходит с долгами?</h3><p>Выберите наиболее близкий вариант.</p>
+              <div class="options">
+                <button class="option" type="button" data-label="Платежи ещё вношу, но нагрузка стала тяжёлой">Плачу, но уже тяжело</button>
+                <button class="option" type="button" data-label="Есть просрочки по кредитам или займам">Есть просрочки</button>
+                <button class="option" type="button" data-label="Есть исполнительные производства или удержания приставов">Есть приставы / удержания</button>
               </div>
-              <div class="check-hint">Это не определяет исход процедуры — только помогает подготовить первый разговор.</div>
+              <div class="hint">Это не определяет исход процедуры — только помогает подготовить разговор.</div>
             </div>
 
-            <div class="check-question" data-question="assets">
-              <h3>Как обстоят дела с имуществом?</h3>
-              <p>Не нужно оценивать его юридический статус самостоятельно.</p>
-              <div class="check-options">
-                <button class="check-option" type="button" data-label="Крупного имущества, кроме обычных бытовых вещей, нет">Крупного имущества нет</button>
-                <button class="check-option" type="button" data-label="Есть квартира или другое жильё">Есть жильё</button>
-                <button class="check-option" type="button" data-label="Есть автомобиль, доли или иное значимое имущество">Есть авто / доли / другое имущество</button>
+            <div class="question" data-question="assets">
+              <h3>Есть ли значимое имущество?</h3><p>Не нужно самостоятельно определять его юридический статус.</p>
+              <div class="options">
+                <button class="option" type="button" data-label="Крупного имущества нет">Крупного имущества нет</button>
+                <button class="option" type="button" data-label="Есть квартира или другое жильё">Есть жильё</button>
+                <button class="option" type="button" data-label="Есть автомобиль, доли или другое значимое имущество">Есть авто / доли / другое</button>
               </div>
-              <div class="check-hint">Даже единственное жильё важно указать — выводы делаются после анализа документов.</div>
+              <div class="hint">Даже единственное жильё важно указать — выводы делаются после анализа документов.</div>
             </div>
 
-            <div class="check-question" data-question="deals">
-              <h3>Были ли значимые сделки за последние годы?</h3>
-              <p>Например, продажа, дарение, переоформление имущества или крупные переводы.</p>
-              <div class="check-options">
-                <button class="check-option" type="button" data-label="Значимых сделок не помню">Нет / не помню</button>
-                <button class="check-option" type="button" data-label="Были продажи, дарение, переоформление или крупные переводы">Да, были</button>
-                <button class="check-option" type="button" data-label="Не уверен(а), какие сделки могут иметь значение">Не уверен(а)</button>
+            <div class="question" data-question="deals">
+              <h3>Были ли значимые сделки?</h3><p>Продажа, дарение, переоформление имущества или крупные переводы.</p>
+              <div class="options">
+                <button class="option" type="button" data-label="Значимых сделок не помню">Нет / не помню</button>
+                <button class="option" type="button" data-label="Были продажи, дарение, переоформление или крупные переводы">Да, были</button>
+                <button class="option" type="button" data-label="Не уверен(а), какие сделки могут иметь значение">Не уверен(а)</button>
               </div>
-              <div class="check-hint">Лучше рассказать о сомнительной сделке заранее, чем обнаружить её значение уже в процессе.</div>
+              <div class="hint">Лучше рассказать о сомнительной сделке заранее, чем обнаружить её значение уже в процессе.</div>
             </div>
 
-            <div class="check-result" id="checkResult" aria-live="polite">
+            <div class="result" id="checkResult" aria-live="polite">
               <div class="result-badge">Готово · предварительно</div>
-              <h3>Что подготовить к первичному разбору</h3>
-              <ul class="prep-list" id="prepList"></ul>
-              <p class="result-note">Ответы не являются юридической оценкой. Правовая позиция формируется после разговора и изучения документов.</p>
+              <h3>Что подготовить к разбору</h3>
+              <ul class="prep" id="prepList"></ul>
+              <p class="hint">Это не юридическое заключение и не обещание результата. Итоговая оценка возможна после изучения обстоятельств и документов.</p>
               <div class="result-actions">
-                <a class="btn dark" id="checkWhatsApp" href="#" target="_blank" rel="noopener">Отправить Елене в WhatsApp</a>
+                <a class="btn dark" id="checkWhatsApp" href="#" target="_blank" rel="noopener">Отправить в WhatsApp</a>
                 <button class="text-btn" id="checkReset" type="button">Пройти заново</button>
               </div>
             </div>
@@ -871,18 +495,14 @@
 
     <section id="faq">
       <div class="wrap faq">
-        <div class="faq-copy reveal">
-          <div class="kicker">Частые вопросы</div>
-          <h2 style="margin-top:18px">Что важно знать <em>до решения</em></h2>
-          <p>Ответы ниже носят общий характер. Конкретная правовая позиция формируется только после изучения обстоятельств и документов.</p>
-        </div>
+        <div class="faq-copy reveal"><div class="kicker">Частые вопросы</div><h2 style="margin-top:14px">До решения — <em>по существу</em></h2><p>Ответы ниже носят общий характер. Конкретная правовая позиция формируется после изучения обстоятельств и документов.</p></div>
         <div class="faq-list reveal">
-          <details><summary>Все ли долги списываются?</summary><p>Нет. Есть обязательства и обстоятельства, при которых освобождение от долгов не применяется. Поэтому состав долгов проверяется до начала процедуры.</p></details>
-          <details><summary>Что будет с единственным жильём?</summary><p>Зависит от характеристик жилья, наличия залога и других обстоятельств. Оценивать имущество нужно в контексте всего дела.</p></details>
-          <details><summary>Можно ли проходить банкротство при официальном доходе?</summary><p>Сам по себе официальный доход не означает автоматического запрета. Значение имеет совокупность финансовых обстоятельств и выбранная процедура.</p></details>
-          <details><summary>Почему нужно рассказывать о старых сделках?</summary><p>Потому что сделки до банкротства могут иметь значение для дела. Их лучше анализировать до подачи документов, а не уже после возникновения спора.</p></details>
-          <details><summary>Можно ли сначала просто понять, подходит ли мне процедура?</summary><p>Да. Для этого и нужен первичный разбор, а при необходимости — полноценная правовая диагностика с картой рисков и действий.</p></details>
-          <details><summary>Что если после диагностики банкротство не подходит?</summary><p>Это тоже полезный результат. Вы не тратите деньги и время на процедуру, которая в текущей ситуации несёт несоразмерные риски или не решает вашу задачу.</p></details>
+          <details><summary>Все ли долги списываются?</summary><p>Нет. Есть обязательства и обстоятельства, при которых освобождение от долгов не применяется. Состав обязательств нужно проверять заранее.</p></details>
+          <details><summary>Что будет с единственным жильём?</summary><p>Это зависит от характеристик жилья, наличия залога и других обстоятельств. Имущество оценивается в контексте всего дела.</p></details>
+          <details><summary>Можно ли проходить банкротство при официальном доходе?</summary><p>Сам по себе официальный доход не означает автоматического запрета. Значение имеет вся финансовая ситуация и выбранная процедура.</p></details>
+          <details><summary>Почему нужно рассказывать о старых сделках?</summary><p>Сделки до банкротства могут иметь значение для дела. Их лучше анализировать до подачи документов, а не уже после возникновения спора.</p></details>
+          <details><summary>Можно ли сначала просто понять, подходит ли процедура?</summary><p>Да. Именно с этого и стоит начинать: собрать исходные данные, оценить риски и только потом принимать решение.</p></details>
+          <details><summary>Что если банкротство сейчас не подходит?</summary><p>Это тоже полезный результат: вы не тратите деньги и время на процедуру, которая не решает задачу или создаёт несоразмерные риски.</p></details>
         </div>
       </div>
     </section>
@@ -890,19 +510,15 @@
     <section id="contact">
       <div class="wrap">
         <div class="cta reveal">
-          <div>
-            <div class="kicker">Первичный разбор — 0 ₽</div>
-            <h2>Начнём с главного: <em style="color:#d7a685">какой путь разумен именно в вашей ситуации.</em></h2>
-            <p>Можно написать одним сообщением. Достаточно примерной суммы долгов, информации об имуществе, доходе и значимых сделках — остальное Елена уточнит по ходу разговора.</p>
-          </div>
-          <div class="cta-side">
+          <div><div class="kicker">Первичный разбор · 0 ₽</div><h2>Начнём с главного: <em style="color:#d8a98c">стоит ли вам идти в банкротство?</em></h2><p>Для первого разговора достаточно примерной суммы долгов, списка кредиторов, сведений об имуществе, доходе и значимых сделках.</p></div>
+          <div class="contact">
             <div class="contact-buttons">
-              <a class="btn accent" href="tel:+79043770075">Позвонить</a>
-              <a class="btn ghost-dark" href="https://wa.me/79043770075?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5%2C%20%D1%85%D0%BE%D1%87%D1%83%20%D0%BF%D0%BE%D0%BB%D1%83%D1%87%D0%B8%D1%82%D1%8C%20%D0%BF%D0%B5%D1%80%D0%B2%D0%B8%D1%87%D0%BD%D1%8B%D0%B9%20%D1%80%D0%B0%D0%B7%D0%B1%D0%BE%D1%80." target="_blank" rel="noopener">WhatsApp</a>
-              <a class="btn ghost-dark" href="tg://resolve?phone=79043770075">Telegram</a>
+              <a class="btn terra" href="tel:+79043770075">Позвонить</a>
+              <a class="btn cream" href="https://wa.me/79043770075?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5%2C%20%D1%85%D0%BE%D1%87%D1%83%20%D0%BF%D0%B5%D1%80%D0%B2%D0%B8%D1%87%D0%BD%D1%8B%D0%B9%20%D1%80%D0%B0%D0%B7%D0%B1%D0%BE%D1%80." target="_blank" rel="noopener">WhatsApp</a>
+              <a class="btn cream" href="tg://resolve?phone=79043770075">Telegram</a>
             </div>
-            <div class="contact-row" id="contact-data"><strong>Телефон · WhatsApp · Telegram</strong><a class="contact-phone phone-inline" href="tel:+79043770075">+7 904 377 00 75</a></div>
-            <div class="contact-row"><strong>Первичный разбор</strong>0 ₽ · начнём с состава долгов, имущества, дохода и значимых сделок.</div>
+            <div class="contact-row"><strong>Телефон · WhatsApp · Telegram</strong><a class="phone" href="tel:+79043770075">+7 904 377 00 75</a></div>
+            <div class="contact-row"><strong>Первичный разбор</strong>0 ₽ · без обязательства начинать процедуру.</div>
           </div>
         </div>
       </div>
@@ -910,9 +526,8 @@
   </main>
 
   <div class="mobile-dock" aria-label="Быстрые контакты">
-    <a href="tel:+79043770075" aria-label="Позвонить Елене">Звонок</a>
-    <a class="wa" href="https://wa.me/79043770075?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5%2C%20%D1%85%D0%BE%D1%87%D1%83%20%D0%BF%D0%BE%D0%BB%D1%83%D1%87%D0%B8%D1%82%D1%8C%20%D0%BF%D0%B5%D1%80%D0%B2%D0%B8%D1%87%D0%BD%D1%8B%D0%B9%20%D1%80%D0%B0%D0%B7%D0%B1%D0%BE%D1%80." target="_blank" rel="noopener" aria-label="Написать Елене в WhatsApp">WhatsApp</a>
-    <a href="tg://resolve?phone=79043770075" aria-label="Написать Елене в Telegram">Telegram</a>
+    <a href="tel:+79043770075">Позвонить</a>
+    <a class="wa" href="https://wa.me/79043770075?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5%2C%20%D1%85%D0%BE%D1%87%D1%83%20%D0%BF%D0%B5%D1%80%D0%B2%D0%B8%D1%87%D0%BD%D1%8B%D0%B9%20%D1%80%D0%B0%D0%B7%D0%B1%D0%BE%D1%80." target="_blank" rel="noopener">WhatsApp</a>
   </div>
 
   <footer>
@@ -924,128 +539,63 @@
 
   <script>
     const nav=document.getElementById('nav');
-    const progress=document.getElementById('scrollProgress');
-    const photo=document.querySelector('.hero-photo');
+    const progress=document.getElementById('progress');
+    const photo=document.querySelector('.portrait img');
     const reduced=matchMedia('(prefers-reduced-motion: reduce)').matches;
 
-    const updateScroll=()=>{
-      const y=scrollY;
-      nav.classList.toggle('scrolled',y>10);
-      const max=document.documentElement.scrollHeight-innerHeight;
+    const onScroll=()=>{
+      const y=scrollY, max=document.documentElement.scrollHeight-innerHeight;
+      nav.classList.toggle('scrolled',y>8);
       progress.style.transform='scaleX('+(max>0?Math.min(1,y/max):0)+')';
-      if(photo && !reduced && innerWidth>900){
-        photo.style.setProperty('--photo-shift',Math.min(18,y*.035)+'px');
-      }
+      if(photo && !reduced && innerWidth>900) photo.style.setProperty('--shift',Math.min(16,y*.03)+'px');
     };
-    addEventListener('scroll',updateScroll,{passive:true});
-    updateScroll();
+    addEventListener('scroll',onScroll,{passive:true}); onScroll();
 
-    const revealEls=[...document.querySelectorAll('.reveal')];
-    const groups=['.pain-grid','.method-grid','.price-grid','.proof-grid','.fit-list'];
-    groups.forEach(sel=>{
-      document.querySelectorAll(sel).forEach(group=>{
-        [...group.children].forEach((el,i)=>{if(el.classList.contains('reveal')||el.closest('.reveal')===el) el.style.setProperty('--delay',(i*75)+'ms')});
-      });
-    });
-    const io=new IntersectionObserver(entries=>entries.forEach(e=>{
-      if(e.isIntersecting){e.target.classList.add('on');io.unobserve(e.target)}
-    }),{threshold:.12,rootMargin:'0px 0px -5% 0px'});
-    revealEls.forEach(el=>io.observe(el));
+    const reveals=[...document.querySelectorAll('.reveal')];
+    document.querySelectorAll('.fit-cards,.steps,.prices').forEach(g=>[...g.children].forEach((el,i)=>el.style.setProperty('--delay',(i*70)+'ms')));
+    const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('on');io.unobserve(e.target)}}),{threshold:.11,rootMargin:'0px 0px -5% 0px'});
+    reveals.forEach(el=>io.observe(el));
 
-    const links=[...document.querySelectorAll('.navlinks a[href^="#"]')];
+    const links=[...document.querySelectorAll('.links a[href^="#"]')];
     const sections=links.map(a=>document.querySelector(a.getAttribute('href'))).filter(Boolean);
-    const spy=new IntersectionObserver(entries=>{
-      entries.forEach(e=>{
-        if(e.isIntersecting){
-          links.forEach(a=>a.classList.toggle('active',a.getAttribute('href')==='#'+e.target.id));
-        }
-      });
-    },{rootMargin:'-35% 0px -55% 0px',threshold:0});
+    const spy=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)links.forEach(a=>a.classList.toggle('active',a.getAttribute('href')==='#'+e.target.id))}),{rootMargin:'-36% 0px -56% 0px'});
     sections.forEach(s=>spy.observe(s));
 
-    document.querySelectorAll('details').forEach(d=>{
-      d.addEventListener('toggle',()=>{
-        if(d.open){
-          document.querySelectorAll('details[open]').forEach(other=>{if(other!==d) other.removeAttribute('open')});
-        }
-      });
-    });
+    document.querySelectorAll('details').forEach(d=>d.addEventListener('toggle',()=>{if(d.open)document.querySelectorAll('details[open]').forEach(o=>{if(o!==d)o.removeAttribute('open')})}));
 
     const selfCheck=document.getElementById('selfCheck');
     if(selfCheck){
-      const questions=[...selfCheck.querySelectorAll('.check-question')];
-      const result=selfCheck.querySelector('#checkResult');
-      const stepEl=selfCheck.querySelector('#checkStep');
-      const bar=selfCheck.querySelector('#checkProgress');
-      const prep=selfCheck.querySelector('#prepList');
-      const wa=selfCheck.querySelector('#checkWhatsApp');
-      const reset=selfCheck.querySelector('#checkReset');
-      const answers={};
-      let step=0;
-
-      const prepByQuestion={
+      const qs=[...selfCheck.querySelectorAll('.question')], result=document.getElementById('checkResult'), stepEl=document.getElementById('checkStep'), bar=document.getElementById('checkProgress'), prep=document.getElementById('prepList'), wa=document.getElementById('checkWhatsApp'), reset=document.getElementById('checkReset');
+      let step=0; const answers={};
+      const prepMap={
         debt:{
-          'Платежи ещё вношу, но нагрузка стала тяжёлой':'примерную сумму долгов, кредиторов и размер ежемесячных платежей',
-          'Есть просрочки по кредитам или займам':'список кредиторов, примерные суммы долгов и сроки просрочек',
-          'Есть исполнительные производства или удержания приставов':'сведения об исполнительных производствах и текущих удержаниях'
+          'Платежи ещё вношу, но нагрузка стала тяжёлой':'примерную сумму долгов, кредиторов и ежемесячные платежи',
+          'Есть просрочки по кредитам или займам':'список кредиторов, примерные суммы и сроки просрочек',
+          'Есть исполнительные производства или удержания приставов':'сведения об исполнительных производствах и удержаниях'
         },
         assets:{
-          'Крупного имущества, кроме обычных бытовых вещей, нет':'сведения об имеющемся имуществе и зарегистрированных правах',
+          'Крупного имущества нет':'сведения об имеющемся имуществе и зарегистрированных правах',
           'Есть квартира или другое жильё':'документы на жильё и сведения о залоге или ипотеке, если они есть',
-          'Есть автомобиль, доли или иное значимое имущество':'документы на автомобиль, доли и другое значимое имущество'
+          'Есть автомобиль, доли или другое значимое имущество':'документы на автомобиль, доли и другое значимое имущество'
         },
         deals:{
           'Значимых сделок не помню':'вспомнить крупные сделки и переоформления за последние годы',
-          'Были продажи, дарение, переоформление или крупные переводы':'документы или основные сведения по значимым сделкам и переводам',
+          'Были продажи, дарение, переоформление или крупные переводы':'основные сведения и документы по значимым сделкам и переводам',
           'Не уверен(а), какие сделки могут иметь значение':'перечень крупных продаж, дарений, переводов и переоформлений, которые вызывают сомнения'
         }
       };
-
-      const showStep=()=>{
-        questions.forEach((q,i)=>q.classList.toggle('active',i===step));
-        result.classList.remove('active');
-        stepEl.textContent='Вопрос '+(step+1)+' из '+questions.length;
-        bar.style.width=((step+1)/questions.length*100)+'%';
-      };
-
+      const show=()=>{qs.forEach((q,i)=>q.classList.toggle('active',i===step));result.classList.remove('active');stepEl.textContent='Вопрос '+(step+1)+' из '+qs.length;bar.style.width=((step+1)/qs.length*100)+'%'};
       const finish=()=>{
-        questions.forEach(q=>q.classList.remove('active'));
-        result.classList.add('active');
-        stepEl.textContent='Готово';
-        bar.style.width='100%';
-        prep.innerHTML='';
-        Object.entries(answers).forEach(([key,value])=>{
-          const li=document.createElement('li');
-          li.textContent=prepByQuestion[key]?.[value] || value;
-          prep.appendChild(li);
-        });
-        const lines=[
-          'Здравствуйте, хочу первичный разбор ситуации по банкротству.',
-          '',
-          'Долги: '+(answers.debt||'не указано'),
-          'Имущество: '+(answers.assets||'не указано'),
-          'Сделки: '+(answers.deals||'не указано')
-        ];
+        qs.forEach(q=>q.classList.remove('active'));result.classList.add('active');stepEl.textContent='Готово';bar.style.width='100%';prep.innerHTML='';
+        Object.entries(answers).forEach(([k,v])=>{const li=document.createElement('li');li.textContent=prepMap[k]?.[v]||v;prep.appendChild(li)});
+        const lines=['Здравствуйте, хочу первичный разбор ситуации по банкротству.','','Долги: '+(answers.debt||'не указано'),'Имущество: '+(answers.assets||'не указано'),'Сделки: '+(answers.deals||'не указано')];
         wa.href='https://wa.me/79043770075?text='+encodeURIComponent(lines.join('\n'));
       };
-
-      selfCheck.querySelectorAll('.check-option').forEach(btn=>{
-        btn.addEventListener('click',()=>{
-          const q=btn.closest('.check-question');
-          const key=q.dataset.question;
-          answers[key]=btn.dataset.label;
-          q.querySelectorAll('.check-option').forEach(b=>b.classList.toggle('selected',b===btn));
-          setTimeout(()=>{
-            if(step<questions.length-1){step++;showStep()}else{finish()}
-          },120);
-        });
-      });
-
-      reset.addEventListener('click',()=>{
-        Object.keys(answers).forEach(k=>delete answers[k]);
-        selfCheck.querySelectorAll('.check-option').forEach(b=>b.classList.remove('selected'));
-        step=0;showStep();
-      });
+      selfCheck.querySelectorAll('.option').forEach(btn=>btn.addEventListener('click',()=>{
+        const q=btn.closest('.question');answers[q.dataset.question]=btn.dataset.label;q.querySelectorAll('.option').forEach(b=>b.classList.toggle('selected',b===btn));
+        setTimeout(()=>{if(step<qs.length-1){step++;show()}else finish()},100);
+      }));
+      reset.addEventListener('click',()=>{Object.keys(answers).forEach(k=>delete answers[k]);selfCheck.querySelectorAll('.option').forEach(b=>b.classList.remove('selected'));step=0;show()});
     }
   </script>
 </body>

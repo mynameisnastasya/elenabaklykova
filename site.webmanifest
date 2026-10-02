@@ -7,5 +7,13 @@
   "scope": "/elenabaklykova/",
   "display": "standalone",
   "background_color": "#f6f1eb",
-  "theme_color": "#2f241f"
+  "theme_color": "#2f241f",
+  "icons": [
+    {
+      "src": "/elenabaklykova/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
 }

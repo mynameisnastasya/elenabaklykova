@@ -14,6 +14,8 @@
   <link rel="alternate" hreflang="x-default" href="https://mynameisnastasya.github.io/elenabaklykova/">
   <link rel="sitemap" type="application/xml" href="https://mynameisnastasya.github.io/elenabaklykova/sitemap.xml">
   <link rel="icon" href="https://mynameisnastasya.github.io/elenabaklykova/favicon.svg" type="image/svg+xml">
+  <link rel="shortcut icon" href="https://mynameisnastasya.github.io/elenabaklykova/favicon.svg">
+  <link rel="mask-icon" href="https://mynameisnastasya.github.io/elenabaklykova/assets/logo-mark.svg" color="#2f241f">
   <link rel="manifest" href="https://mynameisnastasya.github.io/elenabaklykova/site.webmanifest">
 
   <meta property="og:locale" content="ru_RU">
@@ -48,6 +50,7 @@
         "name": "Елена Баклыкова",
         "url": "https://mynameisnastasya.github.io/elenabaklykova/",
         "image": "https://mynameisnastasya.github.io/elenabaklykova/assets/elena-main.webp",
+        "logo": "https://mynameisnastasya.github.io/elenabaklykova/assets/logo-mark.svg",
         "jobTitle": "Юрист по банкротству физических лиц",
         "telephone": "+7 904 377 00 75",
         "knowsAbout": [
@@ -161,7 +164,8 @@
     .nav.scrolled{border-color:var(--line);box-shadow:0 12px 34px rgba(47,36,31,.045)}
     .navin{height:76px;display:flex;align-items:center;justify-content:space-between;gap:24px}
     .brand{display:flex;align-items:center;gap:12px}
-    .monogram{width:42px;height:42px;border-radius:9px;display:grid;place-items:center;background:var(--ink);color:#f6ede5;font-family:var(--serif);font-size:16px}
+    .logo-mark{width:42px;height:42px;border-radius:9px;display:grid;place-items:center;background:#eee3d8;border:1px solid rgba(47,36,31,.1);overflow:hidden}
+    .logo-mark img{width:34px;height:34px;display:block}
     .brandtext{line-height:1.1}
     .brandtext strong{display:block;font-size:14px}
     .brandtext span{display:block;margin-top:4px;font-size:9px;text-transform:uppercase;letter-spacing:.17em;color:#817972}
@@ -206,7 +210,8 @@
     .portrait:after{content:"";position:absolute;inset:14px;z-index:2;border:1px solid rgba(255,246,238,.42);border-radius:13px}
     .portrait-top{position:relative;z-index:3;display:flex;justify-content:space-between;padding:28px}
     .portrait-top span:first-child{font-size:9px;text-transform:uppercase;letter-spacing:.18em;color:#f5e7dc}
-    .seal{width:78px;height:78px;border:1px solid rgba(255,246,238,.58);border-radius:50%;display:grid;place-items:center;font-family:var(--serif);font-size:27px;color:#fff}
+    .seal{width:78px;height:78px;border:1px solid rgba(255,246,238,.58);border-radius:50%;display:grid;place-items:center;background:rgba(47,36,31,.12);backdrop-filter:blur(5px)}
+    .seal img{width:51px;height:51px;display:block}
     .portrait-note{
       position:absolute;z-index:3;left:28px;right:28px;bottom:28px;color:#fff;
       display:grid;grid-template-columns:auto 1fr;gap:15px;align-items:start
@@ -337,7 +342,7 @@
     details p{font-size:13px;color:#6f6762;margin:12px 38px 0 0;animation:qIn .22s ease}
 
     .cta{background:var(--ink);color:#fff;border-radius:18px;padding:42px;display:grid;grid-template-columns:1.18fr .82fr;gap:34px;align-items:end;position:relative;overflow:hidden}
-    .cta:after{content:"ЕБ";position:absolute;right:-10px;top:-45px;font-family:var(--serif);font-size:245px;color:rgba(255,255,255,.024)}
+    .cta:after{content:"";position:absolute;right:-30px;top:-35px;width:250px;height:250px;background:url("assets/logo-mark-light.svg") center/contain no-repeat;opacity:.055;transform:rotate(6deg)}
     .cta .kicker{color:#c9aa97}.cta h2{color:#fff;font-size:clamp(41px,4.8vw,64px);margin-top:12px}.cta p{font-size:14px;color:#d5c9c2;max-width:620px}
     .contact{position:relative;z-index:2;display:grid;gap:10px}.contact-buttons{display:grid;grid-template-columns:repeat(3,1fr);gap:7px}.contact-buttons .btn{padding:11px 9px}
     .contact-row{padding-top:13px;border-top:1px solid var(--line-dark);font-size:12px;color:#d0c3bb}.contact-row strong{display:block;color:#fff;margin-bottom:3px}.phone{font-family:var(--serif);font-size:23px;color:#fff}
@@ -384,7 +389,7 @@
   <nav class="nav" id="nav">
     <div class="wrap navin">
       <a class="brand" href="#top" aria-label="Елена Баклыкова — на главную">
-        <span class="monogram">ЕБ</span>
+        <span class="logo-mark" aria-hidden="true"><img src="assets/logo-mark.svg" alt=""></span>
         <span class="brandtext"><strong>Елена Баклыкова</strong><span>банкротство физических лиц</span></span>
       </a>
       <div class="links">
@@ -420,7 +425,7 @@
 
         <div class="portrait" aria-label="Елена Баклыкова">
           <img src="assets/elena-main.webp" alt="Елена Баклыкова, юрист по банкротству физических лиц" fetchpriority="high" decoding="async">
-          <div class="portrait-top"><span>частная юридическая практика</span><span class="seal">ЕБ</span></div>
+          <div class="portrait-top"><span>частная юридическая практика</span><span class="seal" aria-hidden="true"><img src="assets/logo-mark-light.svg" alt=""></span></div>
           <div class="portrait-note">
             <span class="dot"></span>
             <div><h3>Елена Баклыкова</h3><p>«Моя задача — не продать процедуру, а снизить неопределённость до того, как вы примете решение».</p></div>
